@@ -52,5 +52,7 @@
   "errors": [
     "Bugcrowd pages returned insufficient text to verify terms."
   ],
-  "automation_id": null
+  "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
+  "schedule": "hourly",
+  "automation_enabled": true
 }
