@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-11T23:30:30+07:00",
-  "last_run_status": "bootstrap_completed",
-  "ranking_status": "insufficient_verified_data",
+  "last_run": "2026-10-11T23:33:09+07:00",
+  "last_run_status": "completed_with_source_gaps",
+  "ranking_status": "no_verified_new_paid_opportunity",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -18,7 +18,18 @@
         "Adobe Public listed as paid, $75-$15,000; detailed program terms not yet checked.",
         "Several new listings are VDP; do not assume payment."
       ],
-      "score": null
+      "score": 0,
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "scope_summary": "Not individually verified",
+      "changes": [],
+      "access_requirements": "unknown"
     },
     {
       "url": "https://bounty.github.com/",
@@ -26,8 +37,28 @@
       "first_seen": "2026-10-11",
       "published_at": null,
       "source_status": "readable",
-      "policy_status": "needs_scope_and_rules_review",
-      "score": null
+      "policy_status": "core_rules_verified_asset_specific_review_required",
+      "score": 64,
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 3,
+        "automation_policy": 4,
+        "research_access": 5
+      },
+      "scope_summary": "Only listed domains/products; exclusions apply. Includes CLI/Desktop and services. Research must use owned accounts and avoid effects on others.",
+      "changes": [
+        "Verified core scope and limited automation rules; no evidence of new launch."
+      ],
+      "access_requirements": "HackerOne for submissions; own accounts for any future authorized tests",
+      "evidence_urls": [
+        "https://bounty.github.com/scope",
+        "https://bounty.github.com/rules.html",
+        "https://bounty.github.com/targets.html"
+      ],
+      "automation_policy": "Low traffic automation allowed; excessive traffic prohibited. This scout remains passive.",
+      "next_passive_step": "Review per-product target pages and ineligible submissions; look for dated official release changes."
     },
     {
       "url": "https://www.microsoft.com/en-us/msrc/bounty",
@@ -36,7 +67,18 @@
       "published_at": null,
       "source_status": "readable",
       "policy_status": "needs_individual_program_review",
-      "score": null
+      "score": 0,
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "scope_summary": "Not individually verified",
+      "changes": [],
+      "access_requirements": "unknown"
     },
     {
       "url": "https://bugcrowd.com/engagements",
@@ -45,14 +87,205 @@
       "published_at": null,
       "source_status": "insufficient_extracted_content",
       "policy_status": "unknown",
-      "score": null
+      "score": 0,
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "scope_summary": "Not individually verified",
+      "changes": [],
+      "access_requirements": "unknown"
+    },
+    {
+      "name": "Adobe Public",
+      "url": "https://app.intigriti.com/programs/adobe/adobepublic",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": "2026-08-04",
+      "scope_summary": "Not available in public preview",
+      "policy_status": "needs_verification",
+      "source_status": "partial_preview",
+      "access_requirements": "Intigriti login and 2FA",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 23,
+      "changes": [
+        "First individual snapshot; not evidence of new program"
+      ],
+      "event_date": "2026-09-01",
+      "event_type": "provider_migration_not_new_program",
+      "reward_summary": "$75-$15,000 across tiers",
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/adobe/adobepublic/preview/detail",
+        "https://www.intigriti.com/blog/news/intigriti-named-new-provider-for-adobes-bug-bounty-program"
+      ],
+      "limits": "Reward policy readable; target scope and automation permission not exposed in preview.",
+      "next_passive_step": "Find publicly readable target scope and tooling policy."
+    },
+    {
+      "name": "Daytona Bug Bounty",
+      "url": "https://app.intigriti.com/programs/daytona/daytonabugbounty",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": null,
+      "scope_summary": "Not available in public preview",
+      "policy_status": "needs_verification",
+      "source_status": "partial_preview",
+      "access_requirements": "Intigriti login, 2FA and application required per directory",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 23,
+      "changes": [
+        "First individual snapshot; not evidence of new program"
+      ],
+      "reward_summary": "€200-€3,500",
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/daytona/daytonabugbounty/preview/detail"
+      ],
+      "limits": "Description is not an authorized asset list.",
+      "next_passive_step": "Read public SDK documentation; verify actual program scope before ranking."
+    },
+    {
+      "name": "Coveo Public Bug Bounty",
+      "url": "https://app.intigriti.com/programs/coveo/coveopublicbugbounty",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": null,
+      "scope_summary": "Not available in public preview",
+      "policy_status": "needs_verification",
+      "source_status": "partial_preview",
+      "access_requirements": "Intigriti login and 2FA",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 23,
+      "changes": [
+        "First individual snapshot; not evidence of new program"
+      ],
+      "reward_summary": "$100-$5,500",
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/coveo/coveopublicbugbounty/preview/detail"
+      ],
+      "limits": "Preview lacks detailed scope and automation rules.",
+      "next_passive_step": "Locate published scope/policy."
+    },
+    {
+      "name": "NVIDIA Public Bug Bounty",
+      "url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": null,
+      "scope_summary": "Container Toolkit released versions and listed CUDA components; excluded from active shortlist.",
+      "policy_status": "suspension_event_observed_excluded",
+      "source_status": "readable",
+      "access_requirements": "Intigriti account for submission; 2FA unknown",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 5
+      },
+      "score": 60,
+      "changes": [
+        "Suspension event observed; prevent prioritization until explicit resumption"
+      ],
+      "program_status": "suspension_event_observed",
+      "event_date_raw": "10/11",
+      "event_date": null,
+      "automation_policy": "Field says Not applicable; not interpreted as permission",
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail"
+      ],
+      "eligible_for_shortlist": false,
+      "limits": "Activity shows suspension on 10/11 without year/time; directory still lists reward. Do not assert exact suspension timestamp or acceptance status.",
+      "next_passive_step": "Look for explicit resumption event/status before reconsidering."
+    },
+    {
+      "name": "GitLab",
+      "url": "https://hackerone.com/gitlab",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": null,
+      "search_index_policy_updated_at": "2026-10-05",
+      "source_status": "javascript_required",
+      "policy_status": "needs_verification",
+      "scope_summary": "Unverified",
+      "access_requirements": "JavaScript required to read page; login requirements unknown",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "score": 0,
+      "changes": [],
+      "limits": "Indexed update date not independently readable; no verified scope change.",
+      "next_passive_step": "Find equivalent vendor-hosted policy."
+    },
+    {
+      "name": "Stripe",
+      "url": "https://hackerone.com/stripe",
+      "first_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-11T23:33:09+07:00",
+      "published_at": null,
+      "search_index_policy_updated_at": "2026-10-08",
+      "source_status": "javascript_required",
+      "policy_status": "needs_verification",
+      "scope_summary": "Unverified",
+      "access_requirements": "JavaScript required to read page; login requirements unknown",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "score": 0,
+      "changes": [],
+      "limits": "Indexed update date not independently readable; no verified scope change.",
+      "next_passive_step": "Find equivalent vendor-hosted policy."
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "name": "NVIDIA Public Bug Bounty",
+      "type": "suspension_event_observed",
+      "evidence_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail"
+    }
+  ],
   "errors": [
-    "Bugcrowd pages returned insufficient text to verify terms."
+    "HackerOne GitLab/Stripe/WordPress direct pages require JavaScript.",
+    "Bugcrowd directory extraction insufficient.",
+    "YesWeHack /programs not accessible.",
+    "Intigriti previews omit scope/tooling rules for three paid candidates."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
-  "automation_enabled": true
+  "automation_enabled": true,
+  "last_run_summary": {
+    "individual_candidates_evaluated": 7,
+    "unique_pages_opened": 15,
+    "verified_new_opportunities": 0,
+    "active_scanning": false
+  }
 }
