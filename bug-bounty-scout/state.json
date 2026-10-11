@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "mode": "passive_opportunity_scout",
+  "timezone": "Asia/Ho_Chi_Minh",
+  "last_run": "2026-10-11T23:30:30+07:00",
+  "last_run_status": "bootstrap_completed",
+  "ranking_status": "insufficient_verified_data",
+  "candidates": [
+    {
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
+      "name": "Intigriti public directory",
+      "first_seen": "2026-10-11",
+      "published_at": null,
+      "source_status": "readable",
+      "policy_status": "directory_only",
+      "observations": [
+        "Includes New labels; exact launch dates not verified.",
+        "Adobe Public listed as paid, $75-$15,000; detailed program terms not yet checked.",
+        "Several new listings are VDP; do not assume payment."
+      ],
+      "score": null
+    },
+    {
+      "url": "https://bounty.github.com/",
+      "name": "GitHub Bug Bounty",
+      "first_seen": "2026-10-11",
+      "published_at": null,
+      "source_status": "readable",
+      "policy_status": "needs_scope_and_rules_review",
+      "score": null
+    },
+    {
+      "url": "https://www.microsoft.com/en-us/msrc/bounty",
+      "name": "Microsoft bounty directory",
+      "first_seen": "2026-10-11",
+      "published_at": null,
+      "source_status": "readable",
+      "policy_status": "needs_individual_program_review",
+      "score": null
+    },
+    {
+      "url": "https://bugcrowd.com/engagements",
+      "name": "Bugcrowd directory",
+      "first_seen": "2026-10-11",
+      "published_at": null,
+      "source_status": "insufficient_extracted_content",
+      "policy_status": "unknown",
+      "score": null
+    }
+  ],
+  "changes": [],
+  "errors": [
+    "Bugcrowd pages returned insufficient text to verify terms."
+  ],
+  "automation_id": null
+}
