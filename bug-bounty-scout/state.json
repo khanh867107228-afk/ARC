@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-11T23:33:09+07:00",
+  "last_run": "2026-10-12T00:43:55+07:00",
   "last_run_status": "completed_with_source_gaps",
-  "ranking_status": "no_verified_new_paid_opportunity",
+  "ranking_status": "one_verified_policy_opportunity_bonus_expiry_unknown",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -194,8 +194,8 @@
       "last_seen": "2026-10-11T23:33:09+07:00",
       "published_at": null,
       "scope_summary": "Container Toolkit released versions and listed CUDA components; excluded from active shortlist.",
-      "policy_status": "suspension_event_observed_excluded",
-      "source_status": "readable",
+      "policy_status": "previous_suspension_not_revalidated",
+      "source_status": "fetch_error",
       "access_requirements": "Intigriti account for submission; 2FA unknown",
       "score_breakdown": {
         "freshness": 0,
@@ -206,7 +206,7 @@
       },
       "score": 60,
       "changes": [
-        "Suspension event observed; prevent prioritization until explicit resumption"
+        "Source unavailable this pass; no evidence of resumption."
       ],
       "program_status": "suspension_event_observed",
       "event_date_raw": "10/11",
@@ -216,31 +216,41 @@
         "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail"
       ],
       "eligible_for_shortlist": false,
-      "limits": "Activity shows suspension on 10/11 without year/time; directory still lists reward. Do not assert exact suspension timestamp or acceptance status.",
-      "next_passive_step": "Look for explicit resumption event/status before reconsidering."
+      "limits": "Current fetch Internal Error; earlier suspension snapshot retained. Historical score 60 is excluded from current ranking.",
+      "next_passive_step": "Find an explicit official resumption event and re-read current policy.",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "last_check_status": "source_error",
+      "score_status": "historical_not_revalidated"
     },
     {
       "name": "GitLab",
       "url": "https://hackerone.com/gitlab",
       "first_seen": "2026-10-11T23:33:09+07:00",
-      "last_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-12T00:43:55+07:00",
       "published_at": null,
       "search_index_policy_updated_at": "2026-10-05",
-      "source_status": "javascript_required",
+      "source_status": "vendor_readable_platform_policy_still_unverified",
       "policy_status": "needs_verification",
       "scope_summary": "Unverified",
-      "access_requirements": "JavaScript required to read page; login requirements unknown",
+      "access_requirements": "HackerOne account for bounty submissions; 2FA unknown.",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 0,
         "reward_evidence": 0,
         "automation_policy": 0,
-        "research_access": 0
+        "research_access": 1
       },
-      "score": 0,
-      "changes": [],
-      "limits": "Indexed update date not independently readable; no verified scope change.",
-      "next_passive_step": "Find equivalent vendor-hosted policy."
+      "score": 3,
+      "changes": [
+        "Vendor reporting-policy source readable; exact bounty scope/tooling still unknown."
+      ],
+      "limits": "Vendor refers to HackerOne for bounty scope/rules; indexed October 5 date not verified as scope change.",
+      "next_passive_step": "Locate complete bounty policy; read official public source and release notes.",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "evidence_urls": [
+        "https://about.gitlab.com/security/disclosure/"
+      ],
+      "eligible_for_shortlist": false
     },
     {
       "name": "Stripe",
@@ -264,28 +274,236 @@
       "changes": [],
       "limits": "Indexed update date not independently readable; no verified scope change.",
       "next_passive_step": "Find equivalent vendor-hosted policy."
+    },
+    {
+      "name": "Nexo",
+      "url": "https://app.intigriti.com/programs/nexo/nexo",
+      "first_seen": "2026-10-12T00:43:55+07:00",
+      "last_seen": "2026-10-12T00:43:55+07:00",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "published_at": null,
+      "published_at_status": "unknown_program_launch",
+      "event_type": "bounty_bonus_announcement",
+      "event_published_at": "2026-10-02",
+      "event_start_at": "2026-10-02",
+      "event_end_at": null,
+      "event_end_status": "unknown_not_stated",
+      "scope_summary": "Tier 1: listed platform.nexo.com API URLs. Tier 2: nexo.com and platform.nexo.com; mobile, third-party integrations and support chat excluded.",
+      "policy_status": "public_scope_rewards_automation_rules_verified",
+      "source_status": "readable",
+      "program_status": "public_program_page_available_no_pause_observed",
+      "eligible_for_shortlist": true,
+      "bonus_status": "official_announcement_verified_end_and_current_bonus_application_not_explicit",
+      "reward_summary": "Tier 1 $150-$4,800; Tier 2 $125-$4,000. Announcement adds 50% for High/Critical/Exceptional in both tiers; do not assume tables already include bonus.",
+      "automation_policy": "Maximum 5 requests/second; required @intigriti.me and X-Intigriti-Username header.",
+      "access_requirements": "Intigriti account for submission; @intigriti.me for own app registration. 2FA unknown; geographic/onboarding eligibility not checked.",
+      "score_breakdown": {
+        "freshness": 4,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 5,
+        "research_access": 1
+      },
+      "score_rationale": {
+        "freshness": "Dated bonus announcement within 10 days; not program launch or changed scope.",
+        "scope_clarity": "Named URL assets and exclusions readable.",
+        "reward_evidence": "Both tier tables and dated bonus announcement readable.",
+        "automation_policy": "Explicit quantitative limit and identifiers.",
+        "research_access": "Public policy only; no developer documentation/source verified."
+      },
+      "changes": [
+        "First verified snapshot in state; observed dated 50% bonus announcement, not a newly launched program."
+      ],
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/nexo/nexo/detail",
+        "https://app.intigriti.com/programs/nexo/nexo/updates",
+        "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+        "https://kb.intigriti.com/en/articles/5247238-community-code-of-conduct"
+      ],
+      "limits": "No explicit bonus end date or separate current-active flag. No account, geographic eligibility or onboarding terms checked. No live testing. Platform AI rules require personal verification and disclosure for any future submission.",
+      "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
+      "score": 83
+    },
+    {
+      "name": "Omarchy",
+      "url": "https://hackerone.com/omarchy",
+      "first_seen": "2026-10-12T00:43:55+07:00",
+      "last_seen": "2026-10-12T00:43:55+07:00",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "published_at": "2026-10-02",
+      "published_at_type": "vendor_launch_announcement_not_exact_platform_start",
+      "scope_summary": "Vendor security page describes security-boundary violations and owned/authorized systems; exact bounty asset list unavailable.",
+      "policy_status": "needs_verification",
+      "source_status": "vendor_readable_platform_content_empty",
+      "program_status": "vendor_announced_paid_program_platform_status_unverified",
+      "eligible_for_shortlist": false,
+      "reward_summary": "Vendor announces $100,000 total funding, not per-finding payout.",
+      "access_requirements": "HackerOne account for paid workflow; vendor offers email reporting. 2FA unknown. No login performed.",
+      "score_breakdown": {
+        "freshness": 4,
+        "scope_clarity": 1,
+        "reward_evidence": 3,
+        "automation_policy": 0,
+        "research_access": 5
+      },
+      "score_rationale": {
+        "freshness": "Vendor announcement dated 02 October; first_seen is 12 October.",
+        "scope_clarity": "General reporting boundaries only, exact list unknown.",
+        "reward_evidence": "Funding and bounty eligibility verified; payout table missing.",
+        "automation_policy": "Unknown; not inferred from agentic product positioning.",
+        "research_access": "Official public GitHub source repository accessible."
+      },
+      "changes": [
+        "New vendor-verified launch announcement recorded; excluded until platform scope/tooling/current status verified."
+      ],
+      "evidence_urls": [
+        "https://omarchy.org/news/2026/10/omarchy-launches-bug-bounty-program-on-hackerone/",
+        "https://omarchy.org/security/",
+        "https://github.com/omacom/omarchy",
+        "https://hackerone.com/omarchy"
+      ],
+      "limits": "HackerOne page yielded no policy text. No exact asset scope, payout tiers, automation permission or current acceptance status verified.",
+      "next_passive_step": "Read public SECURITY.md/release notes; locate a vendor mirror of the full HackerOne policy.",
+      "score": 52
+    },
+    {
+      "name": "Banco Galicia x YesWeHack Ekoparty 2026",
+      "url": "https://www.yeswehack.com/page/live-hacking-event-banco-galicia-yeswehack-ekoparty-2026",
+      "first_seen": "2026-10-12T00:43:55+07:00",
+      "last_seen": "2026-10-12T00:43:55+07:00",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "published_at": null,
+      "event_start_at": "2026-10-07",
+      "event_end_at": "2026-10-09",
+      "scope_summary": "Conference live-hacking event; no ongoing public scope verified.",
+      "policy_status": "event_window_ended_not_active_opportunity",
+      "source_status": "readable",
+      "program_status": "event_ended",
+      "eligible_for_shortlist": false,
+      "access_requirements": "Ekoparty attendee event; general account/2FA and ongoing program requirements unknown.",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "changes": [
+        "Recorded and excluded because advertised event dates precede this check."
+      ],
+      "evidence_urls": [
+        "https://www.yeswehack.com/page/live-hacking-event-banco-galicia-yeswehack-ekoparty-2026",
+        "https://www.yeswehack.com/news/kettle-ai-innovation-crlf-robots"
+      ],
+      "limits": "Event is not evidence of a new ongoing public paid program; publication date unknown.",
+      "next_passive_step": "Check official post-event announcement for an independently published ongoing program.",
+      "score": 0
     }
   ],
   "changes": [
     {
-      "name": "NVIDIA Public Bug Bounty",
-      "type": "suspension_event_observed",
-      "evidence_url": "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail"
+      "name": "Nexo",
+      "type": "first_verified_snapshot_with_dated_bonus",
+      "event_published_at": "2026-10-02",
+      "evidence_url": "https://app.intigriti.com/programs/nexo/nexo/updates",
+      "observed_at": "2026-10-12T00:43:55+07:00",
+      "limits": "No exact bonus expiry/current application confirmation; not a scope diff."
     }
   ],
   "errors": [
-    "HackerOne GitLab/Stripe/WordPress direct pages require JavaScript.",
-    "Bugcrowd directory extraction insufficient.",
-    "YesWeHack /programs not accessible.",
-    "Intigriti previews omit scope/tooling rules for three paid candidates."
+    "NVIDIA program page returned Internal Error; no resumption inferred.",
+    "HackerOne Omarchy yielded no policy text.",
+    "system1 search yielded irrelevant off-domain results; ignored in favor of primary pages."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 7,
+    "individual_candidates_evaluated": 5,
     "unique_pages_opened": 15,
-    "verified_new_opportunities": 0,
-    "active_scanning": false
-  }
+    "verified_new_opportunities": 1,
+    "verified_active_bonus_expiry": 0,
+    "verified_scope_diffs": 0,
+    "active_scanning": false,
+    "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+    "notification_reason": "first_verified_Nexo_policy_with_dated_bonus_announcement"
+  },
+  "run_history": [
+    {
+      "checked_at": "2026-10-11T23:33:09+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 7,
+        "unique_pages_opened": 15,
+        "verified_new_opportunities": 0,
+        "active_scanning": false
+      }
+    },
+    {
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 5,
+        "unique_pages_opened": 15,
+        "verified_new_opportunities": 1,
+        "verified_active_bonus_expiry": 0,
+        "verified_scope_diffs": 0,
+        "active_scanning": false,
+        "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+        "notification_reason": "first_verified_Nexo_policy_with_dated_bonus_announcement"
+      },
+      "changes": [
+        {
+          "name": "Nexo",
+          "type": "first_verified_snapshot_with_dated_bonus",
+          "event_published_at": "2026-10-02",
+          "evidence_url": "https://app.intigriti.com/programs/nexo/nexo/updates",
+          "observed_at": "2026-10-12T00:43:55+07:00",
+          "limits": "No exact bonus expiry/current application confirmation; not a scope diff."
+        }
+      ],
+      "errors": [
+        "NVIDIA program page returned Internal Error; no resumption inferred.",
+        "HackerOne Omarchy yielded no policy text.",
+        "system1 search yielded irrelevant off-domain results; ignored in favor of primary pages."
+      ]
+    }
+  ],
+  "source_notices": [
+    {
+      "url": "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
+      "published_at": "2026-10-08",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "source_status": "readable",
+      "summary": "Official platform update: N/A counts as rejected, informational excluded; throttled accounts capped at six submissions/week; new accounts throttled by default. Not an individual bounty opportunity.",
+      "limits": "No Bugcrowd target policy evaluated this pass; account-specific status unknown.",
+      "next_passive_step": "Read linked official throttling and identity documentation."
+    },
+    {
+      "url": "https://yeswehack.com/programs",
+      "checked_at": "2026-10-12T00:43:55+07:00",
+      "source_status": "readable",
+      "published_at": null,
+      "summary": "Directory now readable unlike prior /programs attempt. Cryptobox listing: €100-€5,000, last update 2026-10-08; update label is not launch or verified scope change.",
+      "limits": "Directory only; individual terms, tooling and login/2FA unknown. Not scored or shortlisted.",
+      "next_passive_step": "Read individual Cryptobox program policy next pass within source budget."
+    }
+  ],
+  "last_run_sources": [
+    "https://app.intigriti.com/programs/nexo/nexo/updates",
+    "https://app.intigriti.com/programs/nexo/nexo/detail",
+    "https://hackerone.com/omarchy",
+    "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail",
+    "https://omarchy.org/",
+    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
+    "https://www.yeswehack.com/news/kettle-ai-innovation-crlf-robots",
+    "https://about.gitlab.com/security/disclosure/",
+    "https://omarchy.org/news/2026/10/omarchy-launches-bug-bounty-program-on-hackerone/",
+    "https://omarchy.org/security/",
+    "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
+    "https://github.com/omacom/omarchy",
+    "https://kb.intigriti.com/en/articles/5247238-community-code-of-conduct",
+    "https://yeswehack.com/programs",
+    "https://www.yeswehack.com/page/live-hacking-event-banco-galicia-yeswehack-ekoparty-2026"
+  ]
 }
