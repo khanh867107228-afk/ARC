@@ -2,7 +2,7 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T03:57:53+07:00",
+  "last_run": "2026-10-12T04:31:32+07:00",
   "last_run_status": "completed_with_source_gaps",
   "ranking_status": "no_new_verified_material_change",
   "candidates": [
@@ -282,7 +282,7 @@
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T02:08:58+07:00",
-      "checked_at": "2026-10-12T03:57:53+07:00",
+      "checked_at": "2026-10-12T04:31:32+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -324,14 +324,14 @@
       "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
       "score": 83,
       "last_check_status": "updates_unchanged_policy_not_rechecked",
-      "last_updates_seen": "2026-10-12T03:57:53+07:00"
+      "last_updates_seen": "2026-10-12T04:31:32+07:00"
     },
     {
       "name": "Omarchy",
       "url": "https://hackerone.com/omarchy",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T00:43:55+07:00",
-      "checked_at": "2026-10-12T03:57:53+07:00",
+      "checked_at": "2026-10-12T04:31:32+07:00",
       "published_at": "2026-10-02",
       "published_at_type": "vendor_launch_announcement_not_exact_platform_start",
       "scope_summary": "Vendor security page describes security-boundary violations and owned/authorized systems; exact bounty asset list unavailable.",
@@ -365,7 +365,7 @@
       "limits": "HackerOne page yielded no policy text. No exact asset scope, payout tiers, automation permission or current acceptance status verified.",
       "next_passive_step": "Read public SECURITY.md/release notes; locate a vendor mirror of the full HackerOne policy.",
       "score": 52,
-      "last_check_status": "javascript_required"
+      "last_check_status": "source_insufficient"
     },
     {
       "name": "Banco Galicia x YesWeHack Ekoparty 2026",
@@ -681,8 +681,8 @@
       "name": "ReReady",
       "url": "https://www.reready.co/help/vulnerability-bug-bounty-program",
       "first_seen": "2026-10-12T03:57:53+07:00",
-      "last_seen": "2026-10-12T03:57:53+07:00",
-      "checked_at": "2026-10-12T03:57:53+07:00",
+      "last_seen": "2026-10-12T04:31:32+07:00",
+      "checked_at": "2026-10-12T04:31:32+07:00",
       "published_at": null,
       "policy_updated_at": "2026-10-11",
       "event_effective_after": "2026-10-11",
@@ -703,9 +703,7 @@
       },
       "score": 86,
       "score_status": "provisional_excluded_not_verified_priority",
-      "changes": [
-        "First policy snapshot with explicit October 11 reward reduction notice; not between-run diff or launch."
-      ],
+      "changes": [],
       "evidence_urls": [
         "https://www.reready.co/help/vulnerability-bug-bounty-program",
         "https://www.reready.co/help/is-there-a-sandbox-environment",
@@ -713,7 +711,72 @@
         "https://www.reready.co/rest-api-documentation"
       ],
       "limits": "Exact launch date unknown. General terms exception and sandbox API access unresolved; no login, email or testing. No prior reward amounts verified.",
-      "next_passive_step": "Watch vendor clarification of sandbox research terms and read public role/API documentation only."
+      "next_passive_step": "Watch vendor clarification of sandbox research terms and read public role/API documentation only.",
+      "last_check_status": "policy_snapshot_unchanged"
+    },
+    {
+      "name": "Randstad",
+      "url": "https://app.intigriti.com/programs/randstad/randstad",
+      "first_seen": "2026-10-12T04:31:32+07:00",
+      "last_seen": "2026-10-12T04:31:32+07:00",
+      "checked_at": "2026-10-12T04:31:32+07:00",
+      "published_at": null,
+      "source_status": "updates_readable_detail_timeout",
+      "policy_status": "needs_verification_scope_current_bonus",
+      "eligible_for_shortlist": false,
+      "scope_summary": "Full scope unavailable; September 11 update removes Randstad India. September 25 limits bonuses to main program.",
+      "reward_summary": "January announcement €250 Critical/€500 Exceptional; September budget warning makes current availability unknown.",
+      "automation_policy": "Historical updates prohibit heavy scanning and state 5 req/sec; complete current rules unknown.",
+      "access_requirements": "Intigriti for submissions; login/2FA and app access unknown.",
+      "score_breakdown": {
+        "freshness": 3,
+        "scope_clarity": 0,
+        "reward_evidence": 3,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 30,
+      "changes": [
+        "First snapshot of September 25 budget warning; no launch or observed between-run scope diff."
+      ],
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/randstad/randstad/updates",
+        "https://app.intigriti.com/programs/randstad/randstad/detail"
+      ],
+      "limits": "Budget exhaustion predicted within 1–2 months is not a verified expiry date. Planned new 2026 project not proof of launch. Detail timed out.",
+      "next_passive_step": "Retry full policy and look for explicit remaining bonus availability/new-project launch."
+    },
+    {
+      "name": "ZECIBLE Public",
+      "url": "https://yeswehack.com/programs/zecible-public-bug-bounty-program",
+      "first_seen": "2026-10-12T04:31:32+07:00",
+      "last_seen": "2026-10-12T04:31:32+07:00",
+      "checked_at": "2026-10-12T04:31:32+07:00",
+      "published_at": null,
+      "policy_updated_at": "2026-10-06",
+      "source_status": "readable",
+      "policy_status": "verified_scanners_prohibited",
+      "eligible_for_shortlist": false,
+      "scope_summary": "Twenty named hosts; everything else excluded. No test accounts or self-registration; only unauthenticated reachable surface.",
+      "reward_summary": "€50–€2,000 depending on scope/severity; repeated systemic issue reward decreases.",
+      "automation_policy": "Automated scanners and tools producing large traffic prohibited; no broad automation permission inferred.",
+      "access_requirements": "Hunter login for report, identifying user agent; no target signup or test credentials. 2FA unknown.",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 48,
+      "changes": [
+        "First policy snapshot; October 6 update label not launch or verified scope change."
+      ],
+      "evidence_urls": [
+        "https://yeswehack.com/programs/zecible-public-bug-bounty-program"
+      ],
+      "limits": "No dated launch, newly active boost or developer docs verified; public policy only.",
+      "next_passive_step": "Watch public program history and locate vendor public documentation without probing hosts."
     }
   ],
   "changes": [
@@ -735,22 +798,22 @@
     }
   ],
   "errors": [
-    "HackerOne Omarchy policy/scopes require JavaScript.",
-    "Bugcrowd directory extraction insufficient.",
-    "Uphold Enterprise documentation returned Internal Error."
+    "Randstad detail timed out.",
+    "Omarchy scope history extraction insufficient.",
+    "Bugcrowd directory extraction insufficient."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 4,
-    "unique_pages_opened": 13,
+    "individual_candidates_evaluated": 5,
+    "unique_pages_opened": 8,
     "new_policy_snapshots": 2,
     "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
     "verified_new_active_boosts": 0,
-    "active_scanning": false,
     "notification_required": false,
+    "active_scanning": false,
     "report_path": "bug-bounty-scout/reports/2026-10-12.md"
   },
   "run_history": [
@@ -909,6 +972,47 @@
         "Bugcrowd directory extraction insufficient.",
         "Uphold Enterprise documentation returned Internal Error."
       ]
+    },
+    {
+      "checked_at": "2026-10-12T04:31:32+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 5,
+        "unique_pages_opened": 8,
+        "new_policy_snapshots": 2,
+        "verified_new_opportunities": 0,
+        "verified_scope_diffs": 0,
+        "verified_new_active_boosts": 0,
+        "notification_required": false,
+        "active_scanning": false,
+        "report_path": "bug-bounty-scout/reports/2026-10-12.md"
+      },
+      "errors": [
+        "Randstad detail timed out.",
+        "Omarchy scope history extraction insufficient.",
+        "Bugcrowd directory extraction insufficient."
+      ],
+      "changes": [
+        {
+          "name": "Randstad",
+          "type": "first_snapshot_excluded_from_verified_priority",
+          "observed_at": "2026-10-12T04:31:32+07:00",
+          "evidence_urls": [
+            "https://app.intigriti.com/programs/randstad/randstad/updates",
+            "https://app.intigriti.com/programs/randstad/randstad/detail"
+          ],
+          "material_notification": false
+        },
+        {
+          "name": "ZECIBLE Public",
+          "type": "first_snapshot_excluded_from_verified_priority",
+          "observed_at": "2026-10-12T04:31:32+07:00",
+          "evidence_urls": [
+            "https://yeswehack.com/programs/zecible-public-bug-bounty-program"
+          ],
+          "material_notification": false
+        }
+      ]
     }
   ],
   "source_notices": [
@@ -932,18 +1036,13 @@
     }
   ],
   "last_run_sources": [
-    "https://hackerone.com/omarchy/policy_scopes",
-    "https://hackerone.com/omarchy?type=team",
-    "https://app.intigriti.com/programs/Uphold/upholdcom/updates",
-    "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
-    "https://www.reready.co/help/vulnerability-bug-bounty-program",
+    "https://app.intigriti.com/programs/randstad/randstad/updates",
+    "https://app.intigriti.com/programs/randstad/randstad/detail",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
-    "https://support.uphold.com/hc/en-us/articles/360026786712-Is-my-location-supported",
-    "https://docs.api.enterprise.uphold.com/",
+    "https://www.reready.co/help/vulnerability-bug-bounty-program",
     "https://yeswehack.com/programs",
     "https://bugcrowd.com/engagements",
-    "https://www.reready.co/help/is-there-a-sandbox-environment",
-    "https://www.reready.co/terms-of-service",
-    "https://www.reready.co/rest-api-documentation"
+    "https://hackerone.com/omarchy/scope_versions",
+    "https://yeswehack.com/programs/zecible-public-bug-bounty-program"
   ]
 }
