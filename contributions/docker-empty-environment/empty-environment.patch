@@ -1,0 +1,47 @@
+From 0082e06c2014609a42753eedcee8b69c6c246f4c Mon Sep 17 00:00:00 2001
+From: khanh867107228-afk
+ <288932073+khanh867107228-afk@users.noreply.github.com>
+Date: Sun, 11 Oct 2026 12:14:36 -0500
+Subject: [PATCH] Honor explicitly empty environment mappings
+
+---
+ docker/utils/utils.py    | 2 +-
+ tests/unit/utils_test.py | 9 +++++++++
+ 2 files changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/docker/utils/utils.py b/docker/utils/utils.py
+index f36a3af..d8997bb 100644
+--- a/docker/utils/utils.py
++++ b/docker/utils/utils.py
+@@ -351,7 +351,7 @@ def parse_devices(devices):
+ 
+ 
+ def kwargs_from_env(environment=None):
+-    if not environment:
++    if environment is None:
+         environment = os.environ
+     host = environment.get('DOCKER_HOST')
+ 
+diff --git a/tests/unit/utils_test.py b/tests/unit/utils_test.py
+index 21da0b5..7195cb0 100644
+--- a/tests/unit/utils_test.py
++++ b/tests/unit/utils_test.py
+@@ -84,6 +84,15 @@ class KwargsFromEnvTest(unittest.TestCase):
+         assert kwargs.get('base_url') is None
+         assert kwargs.get('tls') is None
+ 
++    def test_kwargs_from_env_explicit_empty_environment(self):
++        os.environ.update(
++            DOCKER_HOST='tcp://192.168.59.103:2376',
++            DOCKER_CERT_PATH=TEST_CERT_DIR,
++            DOCKER_TLS_VERIFY='1',
++        )
++
++        assert kwargs_from_env(environment={}) == {}
++
+     def test_kwargs_from_env_tls(self):
+         os.environ.update(DOCKER_HOST='tcp://192.168.59.103:2376',
+                           DOCKER_CERT_PATH=TEST_CERT_DIR,
+-- 
+2.51.1
+
