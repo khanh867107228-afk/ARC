@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T00:43:55+07:00",
+  "last_run": "2026-10-12T01:26:39+07:00",
   "last_run_status": "completed_with_source_gaps",
-  "ranking_status": "one_verified_policy_opportunity_bonus_expiry_unknown",
+  "ranking_status": "no_new_verified_material_change",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -98,7 +98,9 @@
       },
       "scope_summary": "Not individually verified",
       "changes": [],
-      "access_requirements": "unknown"
+      "access_requirements": "unknown",
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "last_check_status": "policy_content_unavailable"
     },
     {
       "name": "Adobe Public",
@@ -279,8 +281,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T00:43:55+07:00",
-      "checked_at": "2026-10-12T00:43:55+07:00",
+      "last_seen": "2026-10-12T01:26:39+07:00",
+      "checked_at": "2026-10-12T01:26:39+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -311,9 +313,7 @@
         "automation_policy": "Explicit quantitative limit and identifiers.",
         "research_access": "Public policy only; no developer documentation/source verified."
       },
-      "changes": [
-        "First verified snapshot in state; observed dated 50% bonus announcement, not a newly launched program."
-      ],
+      "changes": [],
       "evidence_urls": [
         "https://app.intigriti.com/programs/nexo/nexo/detail",
         "https://app.intigriti.com/programs/nexo/nexo/updates",
@@ -322,7 +322,8 @@
       ],
       "limits": "No explicit bonus end date or separate current-active flag. No account, geographic eligibility or onboarding terms checked. No live testing. Platform AI rules require personal verification and disclosure for any future submission.",
       "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
-      "score": 83
+      "score": 83,
+      "last_check_status": "no_material_change"
     },
     {
       "name": "Omarchy",
@@ -398,35 +399,214 @@
       "limits": "Event is not evidence of a new ongoing public paid program; publication date unknown.",
       "next_passive_step": "Check official post-event announcement for an independently published ongoing program.",
       "score": 0
+    },
+    {
+      "last_seen": "2026-10-12T01:26:39+07:00",
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "published_at": null,
+      "source_status": "readable",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 48,
+      "name": "Cryptobox",
+      "url": "https://yeswehack.com/programs/cryptobox-bug-bounty",
+      "first_seen": "2026-10-12T00:43:55+07:00",
+      "first_policy_verified_at": "2026-10-12T01:26:39+07:00",
+      "policy_updated_at": "2026-10-08",
+      "policy_updated_at_meaning": "page label only; exact scope delta unknown",
+      "scope_summary": "Dedicated bounty.cryptobox.com platform plus listed Android/iOS clients; other deployments and admin subdomain excluded.",
+      "policy_status": "needs_verification_automation_unknown",
+      "program_status": "public_paid_listing",
+      "eligible_for_shortlist": false,
+      "reward_summary": "€100/€1,000/€3,000/€5,000 by severity",
+      "automation_policy": "No explicit permission or rate verified; silence is not authorization.",
+      "access_requirements": "YesWeHack account and @yeswehack.ninja alias; two own accounts supported; 2FA unknown.",
+      "evidence_urls": [
+        "https://yeswehack.com/programs/cryptobox-bug-bounty",
+        "https://yeswehack.com/programs"
+      ],
+      "changes": [
+        "Directory lead from earlier run now has verified scope/reward snapshot; no verified October 8 scope diff."
+      ],
+      "limits": "Launch date and release dates unknown; program-hosted 4.41/4.40 notes are not dated launches. Access documents may be confidential; not retrieved. Automation permission unknown.",
+      "next_passive_step": "Find publicly published tooling policy and dated vendor release notes; do not register or probe targets."
+    },
+    {
+      "last_seen": "2026-10-12T01:26:39+07:00",
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "published_at": null,
+      "source_status": "readable",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 48,
+      "name": "YesWeHack platform",
+      "url": "https://yeswehack.com/programs/yes-we-hack",
+      "first_seen": "2026-10-12T01:26:39+07:00",
+      "policy_updated_at": "2025-01-21",
+      "scope_summary": "yeswehack.com, api.yeswehack.com, apps.yeswehack.com and www.yeswehack.com; Wallet/KYC excluded.",
+      "policy_status": "verified_manual_research_only",
+      "program_status": "public_paid_listing",
+      "eligible_for_shortlist": false,
+      "reward_summary": "€50-€15,000 depending on asset/severity",
+      "automation_policy": "Program instructs researchers to refrain from automated tools.",
+      "access_requirements": "Hunter account for submission; 2FA unknown.",
+      "evidence_urls": [
+        "https://yeswehack.com/programs/yes-we-hack"
+      ],
+      "changes": [
+        "First individual policy snapshot; old program not treated as new launch."
+      ],
+      "limits": "Not suitable for automated testing. Publication date unknown; last-update label is not launch. No new event verified.",
+      "next_passive_step": "Read official policy history/documentation without target requests."
+    },
+    {
+      "last_seen": "2026-10-12T01:26:39+07:00",
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "published_at": null,
+      "source_status": "readable",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 48,
+      "name": "Lansweeper Bug Bounty",
+      "url": "https://app.intigriti.com/programs/lansweeper/lansweeper1",
+      "first_seen": "2026-10-12T01:26:39+07:00",
+      "scope_summary": "Listed cloud URLs remain; Classic, Discovery, Agents/on-prem components excluded effective September 1.",
+      "policy_status": "verified_scope_contraction_scanners_prohibited",
+      "program_status": "public_program_with_partial_scope_exclusions",
+      "eligible_for_shortlist": false,
+      "reward_summary": "Tier 1 €100-€2,000; tier 2 €100-€1,000; tier 3 €50-€700",
+      "automation_policy": "5 requests/sec generic field but explicit prohibition on automatic scanners; do not interpret numeric cap as scanner permission.",
+      "access_requirements": "Intigriti account, @intigriti.me mandatory; app login for release notifications; 2FA unknown.",
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/lansweeper/lansweeper1/detail",
+        "https://app.intigriti.com/programs/lansweeper/lansweeper1/updates"
+      ],
+      "event_type": "scope_contraction_announcement",
+      "event_published_at": "2026-09-01",
+      "event_start_at": "2026-09-01",
+      "event_end_at": null,
+      "bonus_status": "October_20_percent_post_is_2024_not_verified_2026",
+      "changes": [
+        "First verified snapshot of September scope reduction, not a newly observed between-run scope diff.",
+        "Discarded outdated October 2024 bonus search hit."
+      ],
+      "limits": "Some descriptive onboarding prose still references on-prem software; explicit exclusion and newer dated update govern. No scope restoration found in readable updates; no broad current boost verified.",
+      "next_passive_step": "Watch official updates for restoration; read public cloud/API docs only."
+    },
+    {
+      "last_seen": null,
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "published_at": null,
+      "source_status": "javascript_required",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "score": 0,
+      "name": "PayPal",
+      "url": "https://hackerone.com/paypal",
+      "first_seen": "2026-10-12T01:26:39+07:00",
+      "policy_status": "needs_verification",
+      "program_status": "unknown",
+      "scope_summary": "Unverified",
+      "eligible_for_shortlist": false,
+      "automation_policy": "unknown",
+      "access_requirements": "Policy not readable through extraction; login/2FA unknown.",
+      "evidence_urls": [
+        "https://hackerone.com/paypal",
+        "https://hackerone.com/paypal/updates"
+      ],
+      "changes": [
+        "Source could not verify policy; search index snippets not used for ranking."
+      ],
+      "limits": "Indexed payouts/update dates/bonuses are not verified current policy or active offers.",
+      "next_passive_step": "Locate a full current vendor-hosted policy and dated program updates."
+    },
+    {
+      "last_seen": null,
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "published_at": null,
+      "source_status": "insufficient_extracted_content",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 0,
+        "automation_policy": 0,
+        "research_access": 0
+      },
+      "score": 0,
+      "name": "OpenAI Bugcrowd",
+      "url": "https://bugcrowd.com/engagements/openai",
+      "first_seen": "2026-10-12T01:26:39+07:00",
+      "policy_status": "needs_verification",
+      "program_status": "unknown",
+      "scope_summary": "Unverified",
+      "eligible_for_shortlist": false,
+      "automation_policy": "unknown",
+      "access_requirements": "Policy not readable through extraction; login/2FA unknown.",
+      "evidence_urls": [
+        "https://bugcrowd.com/engagements/openai"
+      ],
+      "changes": [
+        "Source could not verify policy; search index snippets not used for ranking."
+      ],
+      "limits": "Indexed payouts/update dates/bonuses are not verified current policy or active offers.",
+      "next_passive_step": "Locate a full current vendor-hosted policy and dated program updates."
     }
   ],
   "changes": [
     {
-      "name": "Nexo",
-      "type": "first_verified_snapshot_with_dated_bonus",
-      "event_published_at": "2026-10-02",
-      "evidence_url": "https://app.intigriti.com/programs/nexo/nexo/updates",
-      "observed_at": "2026-10-12T00:43:55+07:00",
-      "limits": "No exact bonus expiry/current application confirmation; not a scope diff."
+      "name": "Cryptobox",
+      "type": "directory_lead_policy_verified_tooling_unknown",
+      "evidence_url": "https://yeswehack.com/programs/cryptobox-bug-bounty",
+      "observed_at": "2026-10-12T01:26:39+07:00",
+      "material_notification": false
+    },
+    {
+      "name": "Lansweeper",
+      "type": "first_observed_historical_scope_contraction",
+      "event_published_at": "2026-09-01",
+      "evidence_url": "https://app.intigriti.com/programs/lansweeper/lansweeper1/updates",
+      "observed_at": "2026-10-12T01:26:39+07:00",
+      "material_notification": false,
+      "limits": "First snapshot, not verified between-run change. October bonus is from 2024."
     }
   ],
   "errors": [
-    "NVIDIA program page returned Internal Error; no resumption inferred.",
-    "HackerOne Omarchy yielded no policy text.",
-    "system1 search yielded irrelevant off-domain results; ignored in favor of primary pages."
+    "PayPal HackerOne policy/updates require JavaScript or return insufficient content.",
+    "Bugcrowd directory and OpenAI policy extraction insufficient."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 5,
-    "unique_pages_opened": 15,
-    "verified_new_opportunities": 1,
-    "verified_active_bonus_expiry": 0,
+    "individual_candidates_evaluated": 6,
+    "unique_pages_opened": 11,
+    "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
+    "verified_new_active_boosts": 0,
+    "new_policy_snapshots": 3,
     "active_scanning": false,
-    "report_path": "bug-bounty-scout/reports/2026-10-12.md",
-    "notification_reason": "first_verified_Nexo_policy_with_dated_bonus_announcement"
+    "notification_required": false,
+    "report_path": "bug-bounty-scout/reports/2026-10-12.md"
   },
   "run_history": [
     {
@@ -467,6 +647,43 @@
         "HackerOne Omarchy yielded no policy text.",
         "system1 search yielded irrelevant off-domain results; ignored in favor of primary pages."
       ]
+    },
+    {
+      "checked_at": "2026-10-12T01:26:39+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 6,
+        "unique_pages_opened": 11,
+        "verified_new_opportunities": 0,
+        "verified_scope_diffs": 0,
+        "verified_new_active_boosts": 0,
+        "new_policy_snapshots": 3,
+        "active_scanning": false,
+        "notification_required": false,
+        "report_path": "bug-bounty-scout/reports/2026-10-12.md"
+      },
+      "changes": [
+        {
+          "name": "Cryptobox",
+          "type": "directory_lead_policy_verified_tooling_unknown",
+          "evidence_url": "https://yeswehack.com/programs/cryptobox-bug-bounty",
+          "observed_at": "2026-10-12T01:26:39+07:00",
+          "material_notification": false
+        },
+        {
+          "name": "Lansweeper",
+          "type": "first_observed_historical_scope_contraction",
+          "event_published_at": "2026-09-01",
+          "evidence_url": "https://app.intigriti.com/programs/lansweeper/lansweeper1/updates",
+          "observed_at": "2026-10-12T01:26:39+07:00",
+          "material_notification": false,
+          "limits": "First snapshot, not verified between-run change. October bonus is from 2024."
+        }
+      ],
+      "errors": [
+        "PayPal HackerOne policy/updates require JavaScript or return insufficient content.",
+        "Bugcrowd directory and OpenAI policy extraction insufficient."
+      ]
     }
   ],
   "source_notices": [
@@ -490,20 +707,16 @@
     }
   ],
   "last_run_sources": [
-    "https://app.intigriti.com/programs/nexo/nexo/updates",
-    "https://app.intigriti.com/programs/nexo/nexo/detail",
-    "https://hackerone.com/omarchy",
-    "https://app.intigriti.com/programs/nvidia/nvidiapublicbugbounty/detail",
-    "https://omarchy.org/",
-    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
-    "https://www.yeswehack.com/news/kettle-ai-innovation-crlf-robots",
-    "https://about.gitlab.com/security/disclosure/",
-    "https://omarchy.org/news/2026/10/omarchy-launches-bug-bounty-program-on-hackerone/",
-    "https://omarchy.org/security/",
-    "https://kb.intigriti.com/en/articles/5466165-researcher-terms-conditions",
-    "https://github.com/omacom/omarchy",
-    "https://kb.intigriti.com/en/articles/5247238-community-code-of-conduct",
     "https://yeswehack.com/programs",
-    "https://www.yeswehack.com/page/live-hacking-event-banco-galicia-yeswehack-ekoparty-2026"
+    "https://yeswehack.com/programs/yes-we-hack",
+    "https://app.intigriti.com/programs/nexo/nexo/updates",
+    "https://bugcrowd.com/engagements",
+    "https://hackerone.com/paypal",
+    "https://yeswehack.com/programs/cryptobox-bug-bounty",
+    "https://hackerone.com/paypal/updates",
+    "https://app.intigriti.com/programs/lansweeper/lansweeper1/updates",
+    "https://bugcrowd.com/engagements/openai",
+    "https://app.intigriti.com/programs/lansweeper/lansweeper1/detail",
+    "https://app.intigriti.com/programs/nexo/nexo/detail"
   ]
 }
