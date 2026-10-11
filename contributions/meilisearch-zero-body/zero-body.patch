@@ -1,0 +1,60 @@
+From 773efe47206b3719981b027646966aacf312e03f Mon Sep 17 00:00:00 2001
+From: khanh867107228-afk
+ <288932073+khanh867107228-afk@users.noreply.github.com>
+Date: Sun, 11 Oct 2026 12:14:36 -0500
+Subject: [PATCH] Preserve zero integer request bodies
+
+---
+ meilisearch/_httprequests.py             |  2 +-
+ tests/client/test_http_request_bodies.py | 26 ++++++++++++++++++++++++
+ 2 files changed, 27 insertions(+), 1 deletion(-)
+ create mode 100644 tests/client/test_http_request_bodies.py
+
+diff --git a/meilisearch/_httprequests.py b/meilisearch/_httprequests.py
+index ba768c5..b127f75 100644
+--- a/meilisearch/_httprequests.py
++++ b/meilisearch/_httprequests.py
+@@ -68,7 +68,7 @@ class HttpRequests:
+                 serialize_body = isinstance(body, dict) or body
+                 data = (
+                     json.dumps(body, cls=serializer)
+-                    if isinstance(body, bool) or serialize_body
++                    if isinstance(body, (bool, int)) or serialize_body
+                     else ""
+                     if body == ""
+                     else "null"
+diff --git a/tests/client/test_http_request_bodies.py b/tests/client/test_http_request_bodies.py
+new file mode 100644
+index 0000000..0e745c0
+--- /dev/null
++++ b/tests/client/test_http_request_bodies.py
+@@ -0,0 +1,26 @@
++from unittest.mock import Mock
++
++import pytest
++import requests
++
++from meilisearch._httprequests import HttpRequests
++from meilisearch.config import Config
++
++
++@pytest.mark.parametrize(
++    ("body", "expected"),
++    [(0, "0"), (1, "1"), (False, "false"), (True, "true"), (None, "null"), ({}, "{}")],
++)
++def test_put_preserves_json_scalar_values(monkeypatch, body, expected):
++    response = Mock(spec=requests.Response)
++    response.content = b"{}"
++    response.json.return_value = {}
++    put = Mock(return_value=response)
++    put.__name__ = "put"
++    monkeypatch.setattr(requests, "put", put)
++    http = HttpRequests(Config("http://localhost:7700", "test-key", timeout=None))
++
++    http.put("indexes/test/settings/search-cutoff-ms", body)
++
++    assert put.call_args.kwargs["data"] == expected
++    response.raise_for_status.assert_called_once_with()
+-- 
+2.51.1
+
