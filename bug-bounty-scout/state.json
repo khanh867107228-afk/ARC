@@ -2,7 +2,7 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T01:26:39+07:00",
+  "last_run": "2026-10-12T02:08:58+07:00",
   "last_run_status": "completed_with_source_gaps",
   "ranking_status": "no_new_verified_material_change",
   "candidates": [
@@ -281,8 +281,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T01:26:39+07:00",
-      "checked_at": "2026-10-12T01:26:39+07:00",
+      "last_seen": "2026-10-12T02:08:58+07:00",
+      "checked_at": "2026-10-12T02:08:58+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -330,7 +330,7 @@
       "url": "https://hackerone.com/omarchy",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T00:43:55+07:00",
-      "checked_at": "2026-10-12T00:43:55+07:00",
+      "checked_at": "2026-10-12T02:08:58+07:00",
       "published_at": "2026-10-02",
       "published_at_type": "vendor_launch_announcement_not_exact_platform_start",
       "scope_summary": "Vendor security page describes security-boundary violations and owned/authorized systems; exact bounty asset list unavailable.",
@@ -354,9 +354,7 @@
         "automation_policy": "Unknown; not inferred from agentic product positioning.",
         "research_access": "Official public GitHub source repository accessible."
       },
-      "changes": [
-        "New vendor-verified launch announcement recorded; excluded until platform scope/tooling/current status verified."
-      ],
+      "changes": [],
       "evidence_urls": [
         "https://omarchy.org/news/2026/10/omarchy-launches-bug-bounty-program-on-hackerone/",
         "https://omarchy.org/security/",
@@ -365,7 +363,8 @@
       ],
       "limits": "HackerOne page yielded no policy text. No exact asset scope, payout tiers, automation permission or current acceptance status verified.",
       "next_passive_step": "Read public SECURITY.md/release notes; locate a vendor mirror of the full HackerOne policy.",
-      "score": 52
+      "score": 52,
+      "last_check_status": "source_gap_no_new_verification"
     },
     {
       "name": "Banco Galicia x YesWeHack Ekoparty 2026",
@@ -542,7 +541,7 @@
     },
     {
       "last_seen": null,
-      "checked_at": "2026-10-12T01:26:39+07:00",
+      "checked_at": "2026-10-12T02:08:58+07:00",
       "published_at": null,
       "source_status": "insufficient_extracted_content",
       "score_breakdown": {
@@ -565,11 +564,79 @@
       "evidence_urls": [
         "https://bugcrowd.com/engagements/openai"
       ],
-      "changes": [
-        "Source could not verify policy; search index snippets not used for ranking."
-      ],
+      "changes": [],
       "limits": "Indexed payouts/update dates/bonuses are not verified current policy or active offers.",
-      "next_passive_step": "Locate a full current vendor-hosted policy and dated program updates."
+      "next_passive_step": "Locate a full current vendor-hosted policy and dated program updates.",
+      "last_check_status": "source_gap_no_new_verification"
+    },
+    {
+      "name": "Liferay DXP",
+      "url": "https://app.intigriti.com/programs/liferay/liferaydxp",
+      "first_seen": "2026-10-12T02:08:58+07:00",
+      "last_seen": "2026-10-12T02:08:58+07:00",
+      "checked_at": "2026-10-12T02:08:58+07:00",
+      "published_at": null,
+      "source_status": "readable_conflicting_status",
+      "policy_status": "needs_verification_current_status_and_tooling",
+      "program_status": "latest_activity_suspension_observed_year_unknown",
+      "eligible_for_shortlist": false,
+      "scope_summary": "Listed DXP quarterly versions; latest-version rule, exclusions and stale version prose require reconciliation. Portal GA/RC builds excluded.",
+      "reward_summary": "$100-$2,000; requested fix verification up to $50 discretionary.",
+      "automation_policy": "Not applicable; no explicit permission inferred.",
+      "access_requirements": "Intigriti login for submission; 2FA unknown. Local DXP license supplied in image with expiry; no installation performed.",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 3,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 5
+      },
+      "score": 50,
+      "changes": [
+        "First snapshot; March 20 2026 reopening does not override latest activity showing suspension on 10/9 (year unstated)."
+      ],
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/liferay/liferaydxp/updates",
+        "https://app.intigriti.com/programs/liferay/liferaydxp/detail",
+        "https://github.com/liferay/liferay-portal/releases/tag/7.4.3.132-ga132"
+      ],
+      "limits": "Latest activity lists suspension above unsuspension on same 10/9 date, year unknown. Source link redirects to Portal GA132, not proof of an in-scope DXP artifact. No new release date verified.",
+      "next_passive_step": "Find explicit current resumption and reconcile supported versions; read public DXP docs/source only."
+    },
+    {
+      "name": "Kiteworks Public",
+      "url": "https://yeswehack.com/programs/kiteworks-public-bug-bounty-program-1",
+      "first_seen": "2026-10-12T02:08:58+07:00",
+      "last_seen": "2026-10-12T02:08:58+07:00",
+      "checked_at": "2026-10-12T02:08:58+07:00",
+      "published_at": null,
+      "published_at_month": "2026-09",
+      "published_at_precision": "month_only",
+      "policy_updated_at": "2026-10-06",
+      "source_status": "readable",
+      "policy_status": "verified_manual_research_only",
+      "program_status": "public_policy_available_no_pause_observed",
+      "eligible_for_shortlist": false,
+      "scope_summary": "Twelve listed scopes: Core, EPG, MFT, forms, API playground, endpoint apps and challenge; only listed hunting targets authorized.",
+      "reward_summary": "Asset-dependent $50-$25,000; restricted crown-jewel challenge up to $50,000, not general per-finding payment.",
+      "automation_policy": "Refrain from automated tools; no numerical permission inferred.",
+      "access_requirements": "Hunter login and YesWeHack alias registration in dedicated environment; identification user agent required; admin not provided; 2FA unknown.",
+      "score_breakdown": {
+        "freshness": 1,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 53,
+      "changes": [
+        "First observed public launch month September 2026; exact date unknown. October 6 update label is not verified scope diff or bonus start."
+      ],
+      "evidence_urls": [
+        "https://yeswehack.com/programs/kiteworks-public-bug-bounty-program-1"
+      ],
+      "limits": "No exact launch day, new boost start/end or between-run scope diff. Documentation primarily within login UI; no accounts created.",
+      "next_passive_step": "Watch public history and vendor release notes; verify public documentation and any tooling-policy change."
     }
   ],
   "changes": [
@@ -591,19 +658,19 @@
     }
   ],
   "errors": [
-    "PayPal HackerOne policy/updates require JavaScript or return insufficient content.",
-    "Bugcrowd directory and OpenAI policy extraction insufficient."
+    "HackerOne Omarchy yielded no policy text.",
+    "Bugcrowd OpenAI extraction insufficient."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 6,
-    "unique_pages_opened": 11,
+    "individual_candidates_evaluated": 5,
+    "unique_pages_opened": 9,
     "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
     "verified_new_active_boosts": 0,
-    "new_policy_snapshots": 3,
+    "new_policy_snapshots": 2,
     "active_scanning": false,
     "notification_required": false,
     "report_path": "bug-bounty-scout/reports/2026-10-12.md"
@@ -684,6 +751,41 @@
         "PayPal HackerOne policy/updates require JavaScript or return insufficient content.",
         "Bugcrowd directory and OpenAI policy extraction insufficient."
       ]
+    },
+    {
+      "checked_at": "2026-10-12T02:08:58+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 5,
+        "unique_pages_opened": 9,
+        "verified_new_opportunities": 0,
+        "verified_scope_diffs": 0,
+        "verified_new_active_boosts": 0,
+        "new_policy_snapshots": 2,
+        "active_scanning": false,
+        "notification_required": false,
+        "report_path": "bug-bounty-scout/reports/2026-10-12.md"
+      },
+      "changes": [
+        {
+          "name": "Liferay DXP",
+          "type": "first_snapshot_excluded_from_automated_shortlist",
+          "evidence_url": "https://app.intigriti.com/programs/liferay/liferaydxp/updates",
+          "observed_at": "2026-10-12T02:08:58+07:00",
+          "material_notification": false
+        },
+        {
+          "name": "Kiteworks Public",
+          "type": "first_snapshot_excluded_from_automated_shortlist",
+          "evidence_url": "https://yeswehack.com/programs/kiteworks-public-bug-bounty-program-1",
+          "observed_at": "2026-10-12T02:08:58+07:00",
+          "material_notification": false
+        }
+      ],
+      "errors": [
+        "HackerOne Omarchy yielded no policy text.",
+        "Bugcrowd OpenAI extraction insufficient."
+      ]
     }
   ],
   "source_notices": [
@@ -707,16 +809,14 @@
     }
   ],
   "last_run_sources": [
-    "https://yeswehack.com/programs",
-    "https://yeswehack.com/programs/yes-we-hack",
+    "https://app.intigriti.com/programs/liferay/liferaydxp/updates",
+    "https://app.intigriti.com/programs/liferay/liferaydxp/detail",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
-    "https://bugcrowd.com/engagements",
-    "https://hackerone.com/paypal",
-    "https://yeswehack.com/programs/cryptobox-bug-bounty",
-    "https://hackerone.com/paypal/updates",
-    "https://app.intigriti.com/programs/lansweeper/lansweeper1/updates",
+    "https://yeswehack.com/programs/kiteworks-public-bug-bounty-program-1",
     "https://bugcrowd.com/engagements/openai",
-    "https://app.intigriti.com/programs/lansweeper/lansweeper1/detail",
-    "https://app.intigriti.com/programs/nexo/nexo/detail"
+    "https://hackerone.com/omarchy",
+    "https://app.intigriti.com/programs/nexo/nexo/detail",
+    "https://omarchy.org/security/",
+    "https://github.com/liferay/liferay-portal/releases/tag/7.4.3.132-ga132"
   ]
 }
