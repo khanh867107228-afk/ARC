@@ -2,7 +2,7 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T02:08:58+07:00",
+  "last_run": "2026-10-12T03:57:53+07:00",
   "last_run_status": "completed_with_source_gaps",
   "ranking_status": "no_new_verified_material_change",
   "candidates": [
@@ -282,7 +282,7 @@
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T02:08:58+07:00",
-      "checked_at": "2026-10-12T02:08:58+07:00",
+      "checked_at": "2026-10-12T03:57:53+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -323,14 +323,15 @@
       "limits": "No explicit bonus end date or separate current-active flag. No account, geographic eligibility or onboarding terms checked. No live testing. Platform AI rules require personal verification and disclosure for any future submission.",
       "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
       "score": 83,
-      "last_check_status": "no_material_change"
+      "last_check_status": "updates_unchanged_policy_not_rechecked",
+      "last_updates_seen": "2026-10-12T03:57:53+07:00"
     },
     {
       "name": "Omarchy",
       "url": "https://hackerone.com/omarchy",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T00:43:55+07:00",
-      "checked_at": "2026-10-12T02:08:58+07:00",
+      "checked_at": "2026-10-12T03:57:53+07:00",
       "published_at": "2026-10-02",
       "published_at_type": "vendor_launch_announcement_not_exact_platform_start",
       "scope_summary": "Vendor security page describes security-boundary violations and owned/authorized systems; exact bounty asset list unavailable.",
@@ -364,7 +365,7 @@
       "limits": "HackerOne page yielded no policy text. No exact asset scope, payout tiers, automation permission or current acceptance status verified.",
       "next_passive_step": "Read public SECURITY.md/release notes; locate a vendor mirror of the full HackerOne policy.",
       "score": 52,
-      "last_check_status": "source_gap_no_new_verification"
+      "last_check_status": "javascript_required"
     },
     {
       "name": "Banco Galicia x YesWeHack Ekoparty 2026",
@@ -637,6 +638,82 @@
       ],
       "limits": "No exact launch day, new boost start/end or between-run scope diff. Documentation primarily within login UI; no accounts created.",
       "next_passive_step": "Watch public history and vendor release notes; verify public documentation and any tooling-policy change."
+    },
+    {
+      "name": "Uphold",
+      "url": "https://app.intigriti.com/programs/Uphold/upholdcom",
+      "first_seen": "2026-10-12T03:57:53+07:00",
+      "last_seen": "2026-10-12T03:57:53+07:00",
+      "checked_at": "2026-10-12T03:57:53+07:00",
+      "published_at": null,
+      "event_published_at": "2026-09-22",
+      "event_start_at": "2026-09-28",
+      "event_end_at": "2026-11-27",
+      "event_type": "dated_bonus_window",
+      "scope_summary": "Listed wallet/enterprise/Topper sandbox APIs and apps, tiered domains/repos; production wallet and APIs excluded.",
+      "reward_summary": "T1 €250–€6,000; T2 €100–€3,000; T3 up to €1,250. +50% High/Critical/Exceptional T1/T2 in advertised window.",
+      "policy_status": "needs_verification_tooling_boundary",
+      "source_status": "readable_with_documentation_error",
+      "program_status": "public_policy_available_latest_activity_unsuspension_year_unknown",
+      "eligible_for_shortlist": false,
+      "automation_policy": "10 req/sec field; broad no scanners clause, FAQ production-only ban, and April sandbox scripts permission need reconciliation. No production automation.",
+      "access_requirements": "Intigriti account/alias and identifying user agent. Enterprise flow 2FA; wallet KYC bypass requires contact (not performed). Vietnam appears new-account restricted; bounty policy says such jurisdictions remain eligible, individual eligibility unverified.",
+      "score_breakdown": {
+        "freshness": 3,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 63,
+      "changes": [
+        "First observed dated bonus window; no prior snapshot scope diff. Excluded pending tooling/access review."
+      ],
+      "evidence_urls": [
+        "https://app.intigriti.com/programs/Uphold/upholdcom/updates",
+        "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+        "https://support.uphold.com/hc/en-us/articles/360026786712-Is-my-location-supported"
+      ],
+      "limits": "No future testing authorized by this scout. Enterprise docs fetch failed; exact scanner/sandbox permissions unresolved. Dates derive from September 22 2026 announcement, not crawl.",
+      "next_passive_step": "Read alternative public API documentation; reconcile sandbox tooling clauses without contact or registration."
+    },
+    {
+      "name": "ReReady",
+      "url": "https://www.reready.co/help/vulnerability-bug-bounty-program",
+      "first_seen": "2026-10-12T03:57:53+07:00",
+      "last_seen": "2026-10-12T03:57:53+07:00",
+      "checked_at": "2026-10-12T03:57:53+07:00",
+      "published_at": null,
+      "policy_updated_at": "2026-10-11",
+      "event_effective_after": "2026-10-11",
+      "scope_summary": "Dedicated sandbox only; production research prohibited. Sandbox sends real emails but no payments or shipments.",
+      "reward_summary": "P1 $1,000/P2 $500/P3 $200/P4 $50; P5 $25 discretionary. Vendor states P4/P5 reduced after October 11; prior amounts unknown.",
+      "policy_status": "needs_verification_general_terms_boundary",
+      "source_status": "readable",
+      "program_status": "vendor_public_paid_policy_available",
+      "eligible_for_shortlist": false,
+      "automation_policy": "Bounty page explicitly allows responsible AI agent sandbox testing without degradation; older general terms restrict robots monitoring/copying software. Exact exception boundary unresolved; no rate stated.",
+      "access_requirements": "Free own sandbox account; 2FA unknown. API docs require admin/Enterprise/payment method; sandbox requirement applicability unknown. PayPal-supported countries only for non-US payouts; own payment eligibility unverified.",
+      "score_breakdown": {
+        "freshness": 4,
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 3,
+        "research_access": 4
+      },
+      "score": 86,
+      "score_status": "provisional_excluded_not_verified_priority",
+      "changes": [
+        "First policy snapshot with explicit October 11 reward reduction notice; not between-run diff or launch."
+      ],
+      "evidence_urls": [
+        "https://www.reready.co/help/vulnerability-bug-bounty-program",
+        "https://www.reready.co/help/is-there-a-sandbox-environment",
+        "https://www.reready.co/terms-of-service",
+        "https://www.reready.co/rest-api-documentation"
+      ],
+      "limits": "Exact launch date unknown. General terms exception and sandbox API access unresolved; no login, email or testing. No prior reward amounts verified.",
+      "next_passive_step": "Watch vendor clarification of sandbox research terms and read public role/API documentation only."
     }
   ],
   "changes": [
@@ -658,19 +735,20 @@
     }
   ],
   "errors": [
-    "HackerOne Omarchy yielded no policy text.",
-    "Bugcrowd OpenAI extraction insufficient."
+    "HackerOne Omarchy policy/scopes require JavaScript.",
+    "Bugcrowd directory extraction insufficient.",
+    "Uphold Enterprise documentation returned Internal Error."
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 5,
-    "unique_pages_opened": 9,
+    "individual_candidates_evaluated": 4,
+    "unique_pages_opened": 13,
+    "new_policy_snapshots": 2,
     "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
     "verified_new_active_boosts": 0,
-    "new_policy_snapshots": 2,
     "active_scanning": false,
     "notification_required": false,
     "report_path": "bug-bounty-scout/reports/2026-10-12.md"
@@ -786,6 +864,51 @@
         "HackerOne Omarchy yielded no policy text.",
         "Bugcrowd OpenAI extraction insufficient."
       ]
+    },
+    {
+      "checked_at": "2026-10-12T03:57:53+07:00",
+      "status": "completed_with_source_gaps",
+      "summary": {
+        "individual_candidates_evaluated": 4,
+        "unique_pages_opened": 13,
+        "new_policy_snapshots": 2,
+        "verified_new_opportunities": 0,
+        "verified_scope_diffs": 0,
+        "verified_new_active_boosts": 0,
+        "active_scanning": false,
+        "notification_required": false,
+        "report_path": "bug-bounty-scout/reports/2026-10-12.md"
+      },
+      "changes": [
+        {
+          "name": "Uphold",
+          "type": "first_snapshot_pending_terms_review",
+          "observed_at": "2026-10-12T03:57:53+07:00",
+          "evidence_urls": [
+            "https://app.intigriti.com/programs/Uphold/upholdcom/updates",
+            "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+            "https://support.uphold.com/hc/en-us/articles/360026786712-Is-my-location-supported"
+          ],
+          "material_notification": false
+        },
+        {
+          "name": "ReReady",
+          "type": "first_snapshot_pending_terms_review",
+          "observed_at": "2026-10-12T03:57:53+07:00",
+          "evidence_urls": [
+            "https://www.reready.co/help/vulnerability-bug-bounty-program",
+            "https://www.reready.co/help/is-there-a-sandbox-environment",
+            "https://www.reready.co/terms-of-service",
+            "https://www.reready.co/rest-api-documentation"
+          ],
+          "material_notification": false
+        }
+      ],
+      "errors": [
+        "HackerOne Omarchy policy/scopes require JavaScript.",
+        "Bugcrowd directory extraction insufficient.",
+        "Uphold Enterprise documentation returned Internal Error."
+      ]
     }
   ],
   "source_notices": [
@@ -809,14 +932,18 @@
     }
   ],
   "last_run_sources": [
-    "https://app.intigriti.com/programs/liferay/liferaydxp/updates",
-    "https://app.intigriti.com/programs/liferay/liferaydxp/detail",
+    "https://hackerone.com/omarchy/policy_scopes",
+    "https://hackerone.com/omarchy?type=team",
+    "https://app.intigriti.com/programs/Uphold/upholdcom/updates",
+    "https://app.intigriti.com/programs/Uphold/upholdcom/detail",
+    "https://www.reready.co/help/vulnerability-bug-bounty-program",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
-    "https://yeswehack.com/programs/kiteworks-public-bug-bounty-program-1",
-    "https://bugcrowd.com/engagements/openai",
-    "https://hackerone.com/omarchy",
-    "https://app.intigriti.com/programs/nexo/nexo/detail",
-    "https://omarchy.org/security/",
-    "https://github.com/liferay/liferay-portal/releases/tag/7.4.3.132-ga132"
+    "https://support.uphold.com/hc/en-us/articles/360026786712-Is-my-location-supported",
+    "https://docs.api.enterprise.uphold.com/",
+    "https://yeswehack.com/programs",
+    "https://bugcrowd.com/engagements",
+    "https://www.reready.co/help/is-there-a-sandbox-environment",
+    "https://www.reready.co/terms-of-service",
+    "https://www.reready.co/rest-api-documentation"
   ]
 }
