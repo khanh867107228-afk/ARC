@@ -1,0 +1,254 @@
+From a894efb5279d7301fedeaf3f3abc17ee7d80491a Mon Sep 17 00:00:00 2001
+From: khanh867107228-afk
+ <288932073+khanh867107228-afk@users.noreply.github.com>
+Date: Sun, 11 Oct 2026 11:57:28 -0500
+Subject: [PATCH] Close Elasticsearch and OpenSearch clients through cleanup
+ hooks
+
+---
+ engine/clients/elasticsearch/configure.py     |  5 +
+ engine/clients/elasticsearch/search.py        | 11 ++-
+ engine/clients/elasticsearch/upload.py        | 11 ++-
+ engine/clients/opensearch/configure.py        |  5 +
+ engine/clients/opensearch/search.py           | 11 ++-
+ engine/clients/opensearch/upload.py           | 11 ++-
+ .../clients/test_search_client_cleanup.py     | 91 +++++++++++++++++++
+ 7 files changed, 125 insertions(+), 20 deletions(-)
+ create mode 100644 tests/engine/clients/test_search_client_cleanup.py
+
+diff --git a/engine/clients/elasticsearch/configure.py b/engine/clients/elasticsearch/configure.py
+index 446fe7c..e53aa4a 100644
+--- a/engine/clients/elasticsearch/configure.py
++++ b/engine/clients/elasticsearch/configure.py
+@@ -25,6 +25,11 @@ class ElasticConfigurator(BaseConfigurator):
+         super().__init__(host, collection_params, connection_params)
+         self.client = get_es_client(host, connection_params)
+ 
++    def delete_client(self):
++        if self.client is not None:
++            self.client.close()
++            self.client = None
++
+     def clean(self):
+         try:
+             self.client.indices.delete(
+diff --git a/engine/clients/elasticsearch/search.py b/engine/clients/elasticsearch/search.py
+index 4a1ee98..3d59105 100644
+--- a/engine/clients/elasticsearch/search.py
++++ b/engine/clients/elasticsearch/search.py
+@@ -10,11 +10,6 @@ from engine.clients.elasticsearch.config import ELASTIC_INDEX, get_es_client
+ from engine.clients.elasticsearch.parser import ElasticConditionParser
+ 
+ 
+-class ClosableElastic(Elasticsearch):
+-    def __del__(self):
+-        self.close()
+-
+-
+ class ElasticSearcher(BaseSearcher):
+     search_params = {}
+     client: Elasticsearch = None
+@@ -51,3 +46,9 @@ class ElasticSearcher(BaseSearcher):
+             (uuid.UUID(hex=hit["_id"]).int, hit["_score"])
+             for hit in res["hits"]["hits"]
+         ]
++
++    @classmethod
++    def delete_client(cls):
++        if cls.client is not None:
++            cls.client.close()
++            cls.client = None
+diff --git a/engine/clients/elasticsearch/upload.py b/engine/clients/elasticsearch/upload.py
+index efe249d..d7377c3 100644
+--- a/engine/clients/elasticsearch/upload.py
++++ b/engine/clients/elasticsearch/upload.py
+@@ -9,11 +9,6 @@ from engine.base_client.upload import BaseUploader
+ from engine.clients.elasticsearch.config import ELASTIC_INDEX, get_es_client
+ 
+ 
+-class ClosableElastic(Elasticsearch):
+-    def __del__(self):
+-        self.close()
+-
+-
+ class ElasticUploader(BaseUploader):
+     client: Elasticsearch = None
+     upload_params = {}
+@@ -46,3 +41,9 @@ class ElasticUploader(BaseUploader):
+             index=ELASTIC_INDEX, wait_for_completion=True, max_num_segments=1
+         )
+         return {}
++
++    @classmethod
++    def delete_client(cls):
++        if cls.client is not None:
++            cls.client.close()
++            cls.client = None
+diff --git a/engine/clients/opensearch/configure.py b/engine/clients/opensearch/configure.py
+index bd55091..22135a1 100644
+--- a/engine/clients/opensearch/configure.py
++++ b/engine/clients/opensearch/configure.py
+@@ -39,6 +39,11 @@ class OpenSearchConfigurator(BaseConfigurator):
+             **init_params,
+         )
+ 
++    def delete_client(self):
++        if self.client is not None:
++            self.client.close()
++            self.client = None
++
+     def clean(self):
+         try:
+             self.client.indices.delete(
+diff --git a/engine/clients/opensearch/search.py b/engine/clients/opensearch/search.py
+index fc7b5cb..5ac2c08 100644
+--- a/engine/clients/opensearch/search.py
++++ b/engine/clients/opensearch/search.py
+@@ -15,11 +15,6 @@ from engine.clients.opensearch.config import (
+ from engine.clients.opensearch.parser import OpenSearchConditionParser
+ 
+ 
+-class ClosableOpenSearch(OpenSearch):
+-    def __del__(self):
+-        self.close()
+-
+-
+ class OpenSearchSearcher(BaseSearcher):
+     search_params = {}
+     client: OpenSearch = None
+@@ -82,3 +77,9 @@ class OpenSearchSearcher(BaseSearcher):
+             cls.client.indices.put_settings(
+                 body=cls.search_params["config"], index=OPENSEARCH_INDEX
+             )
++
++    @classmethod
++    def delete_client(cls):
++        if cls.client is not None:
++            cls.client.close()
++            cls.client = None
+diff --git a/engine/clients/opensearch/upload.py b/engine/clients/opensearch/upload.py
+index 0bc2427..36fd662 100644
+--- a/engine/clients/opensearch/upload.py
++++ b/engine/clients/opensearch/upload.py
+@@ -14,11 +14,6 @@ from engine.clients.opensearch.config import (
+ )
+ 
+ 
+-class ClosableOpenSearch(OpenSearch):
+-    def __del__(self):
+-        self.close()
+-
+-
+ class OpenSearchUploader(BaseUploader):
+     client: OpenSearch = None
+     upload_params = {}
+@@ -69,3 +64,9 @@ class OpenSearchUploader(BaseUploader):
+             },
+         )
+         return {}
++
++    @classmethod
++    def delete_client(cls):
++        if cls.client is not None:
++            cls.client.close()
++            cls.client = None
+diff --git a/tests/engine/clients/test_search_client_cleanup.py b/tests/engine/clients/test_search_client_cleanup.py
+new file mode 100644
+index 0000000..f8df97f
+--- /dev/null
++++ b/tests/engine/clients/test_search_client_cleanup.py
+@@ -0,0 +1,91 @@
++from unittest.mock import Mock
++
++import pytest
++
++from engine.base_client.client import BaseClient
++from engine.clients.elasticsearch.configure import ElasticConfigurator
++from engine.clients.elasticsearch.search import ElasticSearcher
++from engine.clients.elasticsearch.upload import ElasticUploader
++from engine.clients.opensearch.configure import OpenSearchConfigurator
++from engine.clients.opensearch.search import OpenSearchSearcher
++from engine.clients.opensearch.upload import OpenSearchUploader
++
++CLIENT_CLASSES = [
++    ElasticConfigurator,
++    ElasticSearcher,
++    ElasticUploader,
++    OpenSearchConfigurator,
++    OpenSearchSearcher,
++    OpenSearchUploader,
++]
++
++
++@pytest.fixture(params=CLIENT_CLASSES)
++def client_owner(request, monkeypatch):
++    client_class = request.param
++    if issubclass(client_class, (ElasticConfigurator, OpenSearchConfigurator)):
++        owner = client_class.__new__(client_class)
++        owner.client = None
++    else:
++        owner = client_class
++        monkeypatch.setattr(owner, "client", None)
++    return owner
++
++
++def test_delete_client_closes_once_and_clears_reference(client_owner):
++    client = Mock()
++    client_owner.client = client
++
++    client_owner.delete_client()
++    client_owner.delete_client()
++
++    client.close.assert_called_once_with()
++    assert client_owner.client is None
++
++
++def test_delete_client_before_initialization(client_owner):
++    client_owner.delete_client()
++    assert client_owner.client is None
++
++
++def test_delete_client_can_close_a_replacement_client(client_owner):
++    first_client = Mock()
++    second_client = Mock()
++    client_owner.client = first_client
++    client_owner.delete_client()
++    client_owner.client = second_client
++    client_owner.delete_client()
++
++    first_client.close.assert_called_once_with()
++    second_client.close.assert_called_once_with()
++    assert client_owner.client is None
++
++
++@pytest.mark.parametrize(
++    "configurator_class,uploader_class,searcher_class",
++    [
++        (ElasticConfigurator, ElasticUploader, ElasticSearcher),
++        (OpenSearchConfigurator, OpenSearchUploader, OpenSearchSearcher),
++    ],
++)
++def test_base_client_cleanup_closes_all_engine_connections(
++    configurator_class, uploader_class, searcher_class, monkeypatch
++):
++    configurator = configurator_class.__new__(configurator_class)
++    connections = [Mock(), Mock(), Mock()]
++    configurator.client = connections[0]
++    monkeypatch.setattr(uploader_class, "client", connections[1])
++    monkeypatch.setattr(searcher_class, "client", connections[2])
++    client = BaseClient(
++        name="cleanup-test",
++        engine="test",
++        configurator=configurator,
++        uploader=uploader_class("localhost", {}, {}),
++        searchers=[searcher_class("localhost", {}, {})],
++    )
++
++    client.delete_client()
++    client.delete_client()
++
++    for connection in connections:
++        connection.close.assert_called_once_with()
+-- 
+2.51.1
+
