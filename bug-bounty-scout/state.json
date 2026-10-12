@@ -2,7 +2,7 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-13T01:56:23+07:00",
+  "last_run": "2026-10-13T02:35:48+07:00",
   "last_run_status": "completed_with_source_gaps",
   "ranking_status": "no_new_verified_opportunities",
   "candidates": [
@@ -283,8 +283,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -726,8 +726,8 @@
       "name": "Randstad",
       "url": "https://app.intigriti.com/programs/randstad/randstad",
       "first_seen": "2026-10-12T04:31:32+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "source_status": "official_detail_and_updates_readable",
       "policy_status": "vdp_no_standard_bounty_conditional_bonus_notice_current_status_unconfirmed_manual_only",
@@ -760,7 +760,7 @@
       "event_published_at": "2026-09-25",
       "event_end_at": null,
       "score_status": "not_verified_for_paid_bounty_shortlist",
-      "last_check_status": "official_updates_readable_no_newer_notice"
+      "last_check_status": "official_updates_rechecked_no_newer_bonus_notice"
     },
     {
       "name": "ZECIBLE Public",
@@ -798,8 +798,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -939,8 +939,8 @@
       "name": "Visma",
       "url": "https://app.intigriti.com/programs/visma/visma/detail",
       "first_seen": "2026-10-12T11:02:10+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": "unknown",
       "event_published_at": "2026-10-02",
       "event_type": "submissions_resumed",
@@ -986,7 +986,7 @@
       "name": "K15t (Bugcrowd)",
       "url": "https://bugcrowd.com/engagements/k15t",
       "first_seen": "2026-10-12T12:48:19+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "scope_summary": "Official Bugcrowd search extraction shows scope rating 3/4 and several Atlassian Marketplace app targets, but the complete target list could not be reliably extracted.",
@@ -1014,7 +1014,7 @@
           "note": "Direct program page still returns insufficient content; not eligible for shortlist."
         }
       ],
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "last_check_status": "direct_page_still_insufficient",
       "limits": "Current active status, full targets, exclusions and automation rules remain unverified; direct page returned only login links.",
       "evidence_urls": [
@@ -1303,8 +1303,8 @@
       "name": "Xelians — Blackbox program",
       "url": "https://yeswehack.com/programs/xelians-blackbox-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
@@ -1353,19 +1353,19 @@
         "No login, registration, target testing, scanning, payload, submission, or contact was performed."
       ],
       "next_passive_step": "Look for dated public policy history or a vendor announcement and reconcile the reward range without logging in or testing targets.",
-      "last_check_status": "official_program_rechecked_report_count_activity_only_no_policy_diff",
+      "last_check_status": "official_program_rechecked_no_material_change",
       "activity_snapshot": {
         "reports": 137,
-        "observed_at": "2026-10-13T01:56:23+07:00",
-        "note": "Directory report count increased 136→137; activity only, not a policy, scope, reward, or launch change."
+        "observed_at": "2026-10-13T02:35:48+07:00",
+        "note": "Report count unchanged; no policy, scope, reward or launch change verified."
       }
     },
     {
       "name": "Pine Labs",
       "url": "https://yeswehack.com/programs/pine-labs-bug-bounty-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
@@ -1410,16 +1410,16 @@
       "last_check_status": "official_program_rechecked_no_material_change",
       "activity_snapshot": {
         "reports": 730,
-        "observed_at": "2026-10-13T01:56:23+07:00",
-        "note": "Report count unchanged; no policy, scope, reward, or launch change verified."
+        "observed_at": "2026-10-13T02:35:48+07:00",
+        "note": "Report count unchanged; no policy, scope, reward or launch change verified."
       }
     },
     {
       "name": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
       "url": "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
       "first_seen": "2026-10-12T18:23:51+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown_exact_challenge_timestamp",
       "policy_updated_at": "2026-10-12",
@@ -1469,19 +1469,20 @@
         "No login, trial registration, credit-card use, target request, testing, scanning, payload, submission, or contact was performed."
       ],
       "next_passive_step": "Read official product/API documentation and public Infomaniak repositories to map components and identify the precise Node.js asset entry; do not send requests to targets or register a trial.",
-      "last_check_status": "challenge_still_in_progress_report_count_activity_only_no_policy_diff",
+      "last_check_status": "challenge_still_in_progress_counts_differ_by_live_extract_no_policy_diff",
       "activity_snapshot": {
-        "reports": 3914,
-        "observed_at": "2026-10-13T01:56:23+07:00",
-        "note": "Directory report count increased 3910→3914; activity only, not a policy, scope, reward, or launch change."
+        "directory_reports": 3914,
+        "detail_reports": 3915,
+        "observed_at": "2026-10-13T02:35:48+07:00",
+        "note": "Live official extracts differ by one report; activity/lag only, not a policy, scope, reward or launch change."
       }
     },
     {
       "name": "Arm Trusted Firmware",
       "url": "https://app.intigriti.com/programs/arm/trustedfirmware/detail",
       "first_seen": "2026-10-12T20:32:23+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": "2026-10-05",
       "published_at_detail": "Official update displays 10/5/2026 3:26:28 PM; public page does not expose timezone.",
       "scope_summary": "TrustedFirmware-A, TrustedFirmware-M, TF-PSA-Crypto and OP-TEE are listed, but new bounty submissions are temporarily paused.",
@@ -1583,15 +1584,15 @@
       "name": "HARMAN International — Web Applications",
       "url": "https://yeswehack.com/programs/harman-international-web-applications",
       "first_seen": "2026-10-13T01:56:23+07:00",
-      "last_seen": "2026-10-13T01:56:23+07:00",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "last_seen": "2026-10-13T02:35:48+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "published_at_status": "unknown",
-      "policy_updated_at": null,
-      "policy_updated_at_status": "conflicting_official_labels_2026-10-12_directory_vs_2026-09-30_detail_extract",
+      "policy_updated_at": "2026-10-12",
+      "policy_updated_at_status": "official_current_label_consistent_change_reason_unverified",
       "scope_summary": "Twenty-seven named web scopes across JBL, Bowers & Wilkins, Denon, Marantz, Harman Audio, Roon and related properties; assets outside the list are excluded.",
       "policy_status": "current_terms_readable_update_reason_unverified_scanners_prohibited",
-      "source_status": "official_directory_and_official_detail_extract_readable_but_update_label_conflicts",
+      "source_status": "official_directory_and_detail_readable_current_labels_consistent",
       "program_status": "public_paid_listing_current_policy_readable",
       "eligible_for_shortlist": false,
       "reward_summary": "Official reward grid ranges $50-$4,000 by asset value and severity; program statistics show a $5,000 historical maximum. No boost verified.",
@@ -1617,6 +1618,17 @@
           "significant": false,
           "verified": false,
           "note": "Scope count and reward range remain 27 and $50-$4,000. Conflicting official extracts do not establish a policy diff or launch; needs direct history/diff verification."
+        },
+        {
+          "candidate": "HARMAN International — Web Applications",
+          "type": "official_source_conflict_resolved_without_policy_diff",
+          "from": "Directory showed 2026-10-12 while detailed official extract showed 2026-09-30 and 2556 reports",
+          "to": "Directory and direct detail both show Last update 2026-10-12, 27 scopes, $50-$4,000 and 2567 reports",
+          "observed_at": "2026-10-13T02:35:48+07:00",
+          "published_at": null,
+          "significant": false,
+          "verified": true,
+          "note": "This verifies present source consistency only. Public program history did not expose the exact content delta, launch date, new scope, reward change or boost."
         }
       ],
       "evidence_urls": [
@@ -1624,32 +1636,32 @@
         "https://yeswehack.com/programs"
       ],
       "limits": [
-        "Official directory currently labels the program updated 2026-10-12, but the detailed official search extract still labels it 2026-09-30.",
-        "No exact policy diff, launch date or boost was verified.",
-        "Directory and detail report counts are inconsistent, so counts are not treated as policy evidence.",
+        "The current official label is 2026-10-12, but no exact public history/diff explains what changed.",
+        "published_at remains unknown; the update label is not treated as a launch date.",
+        "Automated scanners or tools generating large traffic are prohibited.",
         "No login, testing, payload, submission, or contact was performed."
       ],
-      "next_passive_step": "Prioritize the direct program history/full-page diff in the next run and compare the 27-scope list before treating the directory label as a real policy change.",
-      "last_check_status": "new_unverified_directory_update_signal_conflicts_with_detail_extract",
+      "next_passive_step": "Keep a snapshot of the 27 listed scopes and reward grid, then monitor public program history for an attributable scope, reward or product delta.",
+      "last_check_status": "official_label_conflict_resolved_no_policy_diff_verified",
       "activity_snapshot": {
         "directory_reports": 2567,
-        "detail_extract_reports": 2556,
-        "observed_at": "2026-10-13T01:56:23+07:00",
-        "note": "Conflicting official extracts; activity count is not used as change evidence."
+        "detail_reports": 2567,
+        "observed_at": "2026-10-13T02:35:48+07:00",
+        "note": "Directory and direct detail currently agree. Report count is activity only and not policy-change evidence."
       }
     }
   ],
   "changes": [
     {
       "candidate": "HARMAN International — Web Applications",
-      "type": "new_unverified_directory_update_signal",
-      "from": "YesWeHack directory snapshot at 2026-10-13T00:27:23+07:00 showed Last update 2026-09-30",
-      "to": "Live directory now shows Last update 2026-10-12, while official detailed search extract still shows 2026-09-30",
-      "observed_at": "2026-10-13T01:56:23+07:00",
+      "type": "official_source_conflict_resolved_without_policy_diff",
+      "from": "Official directory/detail labels and report counts conflicted in the prior run",
+      "to": "Current official directory and direct detail agree on update date 2026-10-12, 27 scopes, $50-$4,000 and 2567 reports",
+      "observed_at": "2026-10-13T02:35:48+07:00",
       "published_at": null,
       "significant": false,
-      "verified": false,
-      "note": "Scope count and reward range remain 27 and $50-$4,000. Conflicting official extracts do not establish a policy diff or launch; needs direct history/diff verification."
+      "verified": true,
+      "note": "No public history entry exposed the exact content delta; no launch, scope addition, reward change or boost is inferred."
     }
   ],
   "errors": [
@@ -1660,24 +1672,24 @@
     },
     {
       "source": "https://bugcrowd.com/engagements/k15t",
-      "error": "direct program page returned only minimal content; current status, full scope and automation rules remain unverified",
+      "error": "direct program page returned minimal content; current status, full scope and automation rules remain unverified",
       "transient": true
     },
     {
       "source": "https://hackerone.com/files",
-      "error": "direct policy page returned insufficient content; Files.com was only an accessibility probe and was not one of the 10 candidates evaluated this run",
+      "error": "direct policy page returned insufficient content; Files.com was only a source-accessibility probe and not one of the 10 evaluated candidates",
       "transient": true
     },
     {
-      "source": "https://www.hackerone.com/bug-bounty-programs",
-      "error": "official listing open returned an internal extraction error; search result was readable but no program change was inferred",
+      "source": "https://hackerone.com/opportunities/all",
+      "error": "official opportunity listing returned insufficient content for reliable dated program-diff verification",
       "transient": true
     }
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Rà 10 ứng viên trên 15 trang chính thức; ghi HARMAN là đầu mối update chưa xác minh do nhãn chính thức mâu thuẫn. Infomaniak/Xelians chỉ tăng số report. Không có thay đổi đã xác minh; 0 bug, 0 bounty.",
+  "last_run_summary": "Rà 10 ứng viên trên 15 trang chính thức. Xung đột nhãn HARMAN đã được nguồn trực tiếp giải quyết, nhưng chưa có public diff để chứng minh thay đổi cơ hội; các policy chính còn lại không đổi. Không phát hiện bug; 0 bounty.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -2669,47 +2681,103 @@
           "transient": true
         }
       ]
+    },
+    {
+      "run_at": "2026-10-13T02:35:48+07:00",
+      "status": "completed_with_source_gaps",
+      "individual_candidates_evaluated": 10,
+      "unique_pages_opened": 15,
+      "official_search_queries": 4,
+      "verified_new_launches": 0,
+      "verified_scope_diffs": 0,
+      "verified_product_scope_additions": 0,
+      "verified_new_active_boosts": 0,
+      "new_verified_opportunities": 0,
+      "new_unverified_leads": 0,
+      "source_consistency_resolutions": 1,
+      "activity_only_changes": 1,
+      "notification_required": false,
+      "active_scanning": false,
+      "bugs_found": 0,
+      "bounty_received": 0,
+      "report_path": "bug-bounty-scout/reports/2026-10-13.md",
+      "changes": [
+        {
+          "candidate": "HARMAN International — Web Applications",
+          "type": "official_source_conflict_resolved_without_policy_diff",
+          "from": "Official directory/detail labels and report counts conflicted in the prior run",
+          "to": "Current official directory and direct detail agree on update date 2026-10-12, 27 scopes, $50-$4,000 and 2567 reports",
+          "observed_at": "2026-10-13T02:35:48+07:00",
+          "published_at": null,
+          "significant": false,
+          "verified": true,
+          "note": "No public history entry exposed the exact content delta; no launch, scope addition, reward change or boost is inferred."
+        }
+      ],
+      "errors": [
+        {
+          "source": "https://bugcrowd.com/engagements",
+          "error": "public directory returned insufficient content for reliable program-diff verification",
+          "transient": true
+        },
+        {
+          "source": "https://bugcrowd.com/engagements/k15t",
+          "error": "direct program page returned minimal content; current status, full scope and automation rules remain unverified",
+          "transient": true
+        },
+        {
+          "source": "https://hackerone.com/files",
+          "error": "direct policy page returned insufficient content; Files.com was only a source-accessibility probe and not one of the 10 evaluated candidates",
+          "transient": true
+        },
+        {
+          "source": "https://hackerone.com/opportunities/all",
+          "error": "official opportunity listing returned insufficient content for reliable dated program-diff verification",
+          "transient": true
+        }
+      ]
     }
   ],
   "source_notices": [
     {
       "source": "YesWeHack / HARMAN",
       "url": "https://yeswehack.com/programs/harman-international-web-applications",
-      "checked_at": "2026-10-13T01:56:23+07:00",
-      "status": "conflicting_official_update_labels_needs_verification",
-      "note": "Live directory changed from 2026-09-30 to 2026-10-12, while detailed official extract still says 2026-09-30; 27 scopes and $50-$4,000 are unchanged. Do not infer a policy diff."
+      "checked_at": "2026-10-13T02:35:48+07:00",
+      "status": "current_official_labels_consistent_exact_diff_unknown",
+      "note": "Directory and direct detail now agree on 2026-10-12, 27 scopes, $50-$4,000 and 2567 reports. No public history item exposes the exact delta, so no opportunity change is inferred."
     },
     {
       "source": "YesWeHack tracked programs",
       "url": "https://yeswehack.com/programs",
-      "checked_at": "2026-10-13T01:56:23+07:00",
-      "status": "activity_only_no_verified_policy_diff",
-      "note": "Infomaniak reports 3910→3914 and Xelians 136→137; Pine Labs unchanged. Activity only."
+      "checked_at": "2026-10-13T02:35:48+07:00",
+      "status": "no_verified_policy_diff",
+      "note": "Infomaniak Challenge #6 remains in progress; directory/detail report counts differ by one. Xelians and Pine Labs are unchanged. Counts are activity only."
     },
     {
       "source": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "status": "canonical_policy_unchanged",
-      "note": "Latest development branch scope and residual 'pinned commit' wording remain unchanged."
+      "note": "Latest-development-commit scope and residual 'pinned commit' wording remain unchanged."
     },
     {
       "source": "Intigriti",
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "status": "readable_no_new_verified_change",
-      "note": "Nexo, Randstad, Arm and Visma show no newer relevant policy event."
+      "note": "Nexo, Randstad, Arm and Visma expose no newer relevant policy event."
     },
     {
       "source": "HackerOne and Bugcrowd",
-      "url": "https://www.hackerone.com/bug-bounty-programs",
-      "checked_at": "2026-10-13T01:56:23+07:00",
+      "url": "https://hackerone.com/opportunities/all",
+      "checked_at": "2026-10-13T02:35:48+07:00",
       "status": "partial_source_gaps",
-      "note": "HackerOne listing extraction failed; Files.com, Bugcrowd directory and K15t remain insufficient. Bugcrowd public list was readable but exposed no dated program diff."
+      "note": "HackerOne directory/Files.com and Bugcrowd directory/K15t remain insufficient for reliable current policy diffs."
     }
   ],
   "last_run_sources": [
     "https://yeswehack.com/programs",
+    "https://yeswehack.com/programs/harman-international-web-applications",
     "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
     "https://yeswehack.com/programs/xelians-blackbox-program",
     "https://yeswehack.com/programs/pine-labs-bug-bounty-program",
@@ -2718,11 +2786,10 @@
     "https://app.intigriti.com/programs/randstad/randstad/updates",
     "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
     "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
+    "https://app.intigriti.com/programs/visma/visma/detail",
     "https://hackerone.com/files",
     "https://bugcrowd.com/engagements",
     "https://bugcrowd.com/engagements/k15t",
-    "https://app.intigriti.com/programs/visma/visma/detail",
-    "https://www.hackerone.com/bug-bounty-programs",
-    "https://www.bugcrowd.com/bug-bounty-list/"
+    "https://hackerone.com/opportunities/all"
   ]
 }
