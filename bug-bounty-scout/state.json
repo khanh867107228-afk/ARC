@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T07:16:06+07:00",
-  "last_run_status": "completed_with_source_gaps",
-  "ranking_status": "no_new_verified_material_change",
+  "last_run": "2026-10-12T08:27:52+07:00",
+  "last_run_status": "completed",
+  "ranking_status": "verification_upgraded",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -333,7 +333,7 @@
       "url": "https://hackerone.com/omarchy",
       "first_seen": "2026-10-12T00:43:55+07:00",
       "last_seen": "2026-10-12T00:43:55+07:00",
-      "checked_at": "2026-10-12T06:20:13+07:00",
+      "checked_at": "2026-10-12T08:27:52+07:00",
       "published_at": "2026-10-02",
       "published_at_type": "vendor_launch_announcement_not_exact_platform_start",
       "scope_summary": "Vendor security page describes security-boundary violations and owned/authorized systems; exact bounty asset list unavailable.",
@@ -403,8 +403,8 @@
       "score": 0
     },
     {
-      "last_seen": "2026-10-12T01:26:39+07:00",
-      "checked_at": "2026-10-12T01:26:39+07:00",
+      "last_seen": "2026-10-12T08:27:52+07:00",
+      "checked_at": "2026-10-12T08:27:52+07:00",
       "published_at": null,
       "source_status": "readable",
       "score_breakdown": {
@@ -432,11 +432,10 @@
         "https://yeswehack.com/programs/cryptobox-bug-bounty",
         "https://yeswehack.com/programs"
       ],
-      "changes": [
-        "Directory lead from earlier run now has verified scope/reward snapshot; no verified October 8 scope diff."
-      ],
+      "changes": [],
       "limits": "Launch date and release dates unknown; program-hosted 4.41/4.40 notes are not dated launches. Access documents may be confidential; not retrieved. Automation permission unknown.",
-      "next_passive_step": "Find publicly published tooling policy and dated vendor release notes; do not register or probe targets."
+      "next_passive_step": "Find publicly published tooling policy and dated vendor release notes; do not register or probe targets.",
+      "last_check_status": "no_material_change"
     },
     {
       "last_seen": "2026-10-12T01:26:39+07:00",
@@ -783,8 +782,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-12T07:16:06+07:00",
-      "checked_at": "2026-10-12T07:16:06+07:00",
+      "last_seen": "2026-10-12T08:27:52+07:00",
+      "checked_at": "2026-10-12T08:27:52+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -817,38 +816,46 @@
       "name": "Intigriti platform bug bounty",
       "url": "https://app.intigriti.com/programs/intigriti/intigriti/detail",
       "first_seen": "2026-10-12T07:16:06+07:00",
-      "last_seen": "2026-10-12T07:16:06+07:00",
-      "checked_at": "2026-10-12T07:16:06+07:00",
+      "last_seen": "2026-10-12T08:27:52+07:00",
+      "checked_at": "2026-10-12T08:27:52+07:00",
       "published_at": "unknown",
-      "scope_summary": "Official indexed program page lists Intigriti-owned assets and tiered rewards; full current scope was not re-fetched because the detail page returned an error.",
-      "policy_status": "needs_verification",
-      "source_status": "partial_official_search_index_detail_fetch_failed",
-      "program_status": "public_bug_bounty_observed_not_launch_verified",
-      "eligible_for_shortlist": false,
-      "reward_summary": "Official search extract shows tiered rewards from €50 up to €13,337 depending on asset tier and severity.",
-      "automation_policy": "Official search extract states automated tooling max 10 requests/second and an X-Intigriti-Username header; revalidation required before testing.",
-      "access_requirements": "Intigriti account likely required for submission; 2FA requirement unknown.",
+      "scope_summary": "Tier 2: *.pwn.intigriti.rocks; Tier 3: www.intigriti.com and *.intigriti.me; Tier 4 includes VPN/metabase PWN assets. The policy explicitly lists numerous out-of-scope assets.",
+      "policy_status": "verified_current_policy",
+      "source_status": "official_detail_page_verified",
+      "program_status": "public_bug_bounty_active",
+      "eligible_for_shortlist": true,
+      "reward_summary": "Tier 2 €50–€13,337; Tier 3 €50–€5,000; Tier 4 up to €1,500. Optional €25 validation-delay and up to €50 fix-verification bonuses are discretionary.",
+      "automation_policy": "Automated tooling allowed up to 10 requests/second; required request header X-Intigriti-Username:{Username}.",
+      "access_requirements": "Valid Intigriti account required for submission. PWN test environment uses WireGuard VPN and permits self-created researcher accounts. 2FA requirement not stated in the public policy.",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 5,
         "reward_evidence": 5,
         "automation_policy": 5,
-        "research_access": 3
+        "research_access": 5
       },
-      "score": 69,
-      "score_rationale": "No evidenced launch date, so freshness=0; policy details are rich but full direct page fetch failed, so it remains outside the verified shortlist.",
-      "changes": [],
+      "score": 75,
+      "score_rationale": "Current official policy is directly verified, with clear scope, rewards, automation limits and dedicated test access; freshness remains 0 because no launch/publication date is evidenced.",
+      "changes": [
+        {
+          "type": "verification_status",
+          "from": "needs_verification",
+          "to": "verified_current_policy",
+          "observed_at": "2026-10-12T08:27:52+07:00",
+          "significant": true
+        }
+      ],
       "evidence_urls": [
         "https://app.intigriti.com/programs/intigriti/intigriti/detail",
         "https://www.intigriti.com/researchers/bug-bounty-programs"
       ],
       "limits": [
-        "Do not treat crawl or first_seen as launch date.",
-        "Direct detail-page fetch failed in this run.",
-        "No testing performed."
+        "published_at remains unknown; first_seen is not launch date.",
+        "No login, testing, payloads or submissions performed.",
+        "Recheck policy immediately before any authorized testing."
       ],
-      "next_passive_step": "Retry the official detail page and compare scope/reward/policy fields before shortlist eligibility.",
-      "last_check_status": "needs_direct_policy_reverification"
+      "next_passive_step": "Monitor the official Updates tab and public policy for dated scope/reward changes; keep research passive until current authorization is reconfirmed.",
+      "last_check_status": "verified_no_program_change"
     },
     {
       "name": "NxtPort VDP",
@@ -887,21 +894,31 @@
       "last_check_status": "excluded_no_reward_evidence"
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "candidate": "Intigriti platform bug bounty",
+      "type": "verification_status",
+      "from": "needs_verification",
+      "to": "verified_current_policy",
+      "observed_at": "2026-10-12T08:27:52+07:00",
+      "significant": true,
+      "note": "Direct official detail page became readable; rewards, tiered scope, safe harbor, automation limit and research access were verified. This is not evidence of a new launch."
+    }
+  ],
   "errors": [
     {
-      "source": "web_search_system1",
-      "error": "transient_internal_error",
+      "source": "https://hackerone.com/omarchy?type=team",
+      "error": "direct_page_content_insufficient_for_full_policy_verification",
       "transient": true
     },
     {
-      "source": "https://app.intigriti.com/programs/intigriti/intigriti/detail",
-      "error": "official_detail_page_fetch_failed",
+      "source": "https://hackerone.com/omarchy/policy_scopes",
+      "error": "direct_scope_page_content_insufficient",
       "transient": true
     },
     {
-      "source": "https://bugcrowd.com/engagements/bugcrowd",
-      "error": "direct_page_content_insufficient_login_only",
+      "source": "Bugcrowd search",
+      "error": "no_new_reliable_official_result",
       "transient": true
     }
   ],
@@ -910,13 +927,13 @@
   "automation_enabled": true,
   "last_run_summary": {
     "individual_candidates_evaluated": 4,
-    "unique_pages_opened": 6,
-    "new_policy_snapshots": 0,
+    "unique_pages_opened": 5,
+    "new_policy_snapshots": 1,
     "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
     "verified_new_active_boosts": 0,
-    "candidates_needing_verification": 1,
-    "notification_required": false,
+    "verification_upgrades": 1,
+    "notification_required": true,
     "active_scanning": false,
     "report_path": "bug-bounty-scout/reports/2026-10-12.md"
   },
@@ -1203,6 +1220,47 @@
       "notification_required": false,
       "active_scanning": false,
       "report_path": "bug-bounty-scout/reports/2026-10-12.md"
+    },
+    {
+      "run_at": "2026-10-12T08:27:52+07:00",
+      "status": "completed",
+      "candidates_evaluated": 4,
+      "unique_pages_opened": 5,
+      "verified_new_opportunities": 0,
+      "verified_scope_diffs": 0,
+      "verified_new_active_boosts": 0,
+      "verification_upgrades": 1,
+      "changes": [
+        {
+          "candidate": "Intigriti platform bug bounty",
+          "type": "verification_status",
+          "from": "needs_verification",
+          "to": "verified_current_policy",
+          "observed_at": "2026-10-12T08:27:52+07:00",
+          "significant": true,
+          "note": "Direct official detail page became readable; rewards, tiered scope, safe harbor, automation limit and research access were verified. This is not evidence of a new launch."
+        }
+      ],
+      "errors": [
+        {
+          "source": "https://hackerone.com/omarchy?type=team",
+          "error": "direct_page_content_insufficient_for_full_policy_verification",
+          "transient": true
+        },
+        {
+          "source": "https://hackerone.com/omarchy/policy_scopes",
+          "error": "direct_scope_page_content_insufficient",
+          "transient": true
+        },
+        {
+          "source": "Bugcrowd search",
+          "error": "no_new_reliable_official_result",
+          "transient": true
+        }
+      ],
+      "notification_required": true,
+      "active_scanning": false,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md"
     }
   ],
   "source_notices": [
@@ -1226,11 +1284,10 @@
     }
   ],
   "last_run_sources": [
-    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
     "https://app.intigriti.com/programs/intigriti/intigriti/detail",
-    "https://www.intigriti.com/researchers/bug-bounty-programs",
-    "https://bugcrowd.com/engagements/bugcrowd",
     "https://yeswehack.com/programs",
-    "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers"
+    "https://hackerone.com/omarchy?type=team",
+    "https://hackerone.com/omarchy/policy_scopes",
+    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397"
   ]
 }
