@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T17:57:07+07:00",
-  "last_run_status": "completed",
-  "ranking_status": "no_new_verified_opportunities",
+  "last_run": "2026-10-12T18:23:51+07:00",
+  "last_run_status": "completed_with_source_gaps",
+  "ranking_status": "verified_significant_change_found",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -19,7 +19,7 @@
         "Several new listings are VDP; do not assume payment."
       ],
       "score": 0,
-      "last_seen": "2026-10-12T07:16:06+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 0,
@@ -30,7 +30,7 @@
       "scope_summary": "Not individually verified",
       "changes": [],
       "access_requirements": "unknown",
-      "checked_at": "2026-10-12T07:16:06+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "last_check_status": "directory_checked_no_verified_launch_date"
     },
     {
@@ -90,7 +90,7 @@
       "source_status": "insufficient_extracted_content",
       "policy_status": "unknown",
       "score": 0,
-      "last_seen": "2026-10-11T23:33:09+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 0,
@@ -101,7 +101,7 @@
       "scope_summary": "Not individually verified",
       "changes": [],
       "access_requirements": "unknown",
-      "checked_at": "2026-10-12T09:53:12+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "last_check_status": "source_insufficient"
     },
     {
@@ -283,8 +283,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -403,8 +403,8 @@
       "score": 0
     },
     {
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": null,
       "source_status": "readable",
       "score_breakdown": {
@@ -726,8 +726,8 @@
       "name": "Randstad",
       "url": "https://app.intigriti.com/programs/randstad/randstad",
       "first_seen": "2026-10-12T04:31:32+07:00",
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": null,
       "source_status": "official_detail_and_updates_readable",
       "policy_status": "vdp_no_standard_bounty_conditional_bonus_notice_current_status_unconfirmed_manual_only",
@@ -798,8 +798,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -1257,35 +1257,44 @@
       "name": "Xelians — Blackbox program",
       "url": "https://yeswehack.com/programs/xelians-blackbox-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
       "policy_updated_at_meaning": "directory/detail label only; no dated launch or scope delta verified",
       "source_status": "readable",
-      "policy_status": "needs_verification_reward_summary_conflict_scanners_prohibited",
+      "policy_status": "verified_scanners_prohibited",
       "program_status": "public_paid_listing",
       "eligible_for_shortlist": false,
       "scope_summary": "Two named pre-production web scopes: preprod-xam.xelians.fr and preprod-datahub.xelians.fr.",
-      "reward_summary": "Detailed severity table shows €50–€1,500; directory summary lists max €150. Reconcile before estimating a reward.",
+      "reward_summary": "Official directory and detailed reward table currently agree on €50–€1,500 by severity.",
       "automation_policy": "Automated scanners and high-traffic tools prohibited; no permission for automation.",
       "access_requirements": "Public terms readable without login. YesWeHack researcher account required to submit; no login attempted. 2FA unknown.",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 5,
-        "reward_evidence": 3,
+        "reward_evidence": 5,
         "automation_policy": 0,
         "research_access": 1
       },
-      "score": 40,
-      "score_status": "needs_verification_not_shortlisted",
+      "score": 48,
+      "score_status": "verified_manual_only_not_shortlisted",
       "changes": [
         {
           "type": "first_snapshot",
           "significant": false,
           "observed_at": "2026-10-12T17:57:07+07:00",
           "note": "First individually recorded snapshot; current-page update label is not evidence of launch or changed terms."
+        },
+        {
+          "candidate": "Xelians — Blackbox program",
+          "type": "reward_evidence_correction",
+          "from": "directory max €150 vs detail max €1,500",
+          "to": "directory and detail both show max €1,500",
+          "observed_at": "2026-10-12T18:23:51+07:00",
+          "significant": false,
+          "note": "Current official directory resolves the previous source mismatch; no launch, scope or boost change inferred."
         }
       ],
       "evidence_urls": [
@@ -1293,21 +1302,19 @@
         "https://yeswehack.com/programs"
       ],
       "limits": [
-        "Page label 'last update 2026-10-12' does not establish launch date or a content change.",
-        "No prior public snapshot was available to prove a scope or policy diff.",
-        "No login, registration, target testing, scanning, payload, submission, or contact was performed.",
-        "Directory reward maximum (€150) differs from detailed table maximum (€1,500).",
-        "No public launch date or changelog was verified."
+        "No public launch date or dated scope delta was verified.",
+        "Automated scanners and high-traffic tools are prohibited.",
+        "No login, registration, target testing, scanning, payload, submission, or contact was performed."
       ],
       "next_passive_step": "Look for dated public policy history or a vendor announcement and reconcile the reward range without logging in or testing targets.",
-      "last_check_status": "first_individual_snapshot_reward_discrepancy"
+      "last_check_status": "reward_sources_now_consistent_no_policy_change"
     },
     {
       "name": "Pine Labs",
       "url": "https://yeswehack.com/programs/pine-labs-bug-bounty-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-12T17:57:07+07:00",
-      "checked_at": "2026-10-12T17:57:07+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
@@ -1350,14 +1357,103 @@
       ],
       "next_passive_step": "Look for dated public policy history or a vendor announcement and reconcile the scope-specific reward table without logging in or testing targets.",
       "last_check_status": "first_individual_snapshot_scope_specific_reward_table"
+    },
+    {
+      "name": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
+      "url": "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
+      "first_seen": "2026-10-12T18:23:51+07:00",
+      "last_seen": "2026-10-12T18:23:51+07:00",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "published_at": null,
+      "published_at_status": "unknown_exact_challenge_timestamp",
+      "policy_updated_at": "2026-10-12",
+      "freshness_evidence": "Official program metadata is dated 2026-10-12; the page states Node.js Hosting was just added and Challenge #6 is in progress. Exact event publication time is not exposed.",
+      "source_status": "official_program_and_product_readable_faq_retrieval_error",
+      "policy_status": "verified_active_challenge_manual_only",
+      "program_status": "public_paid_active_challenge",
+      "eligible_for_shortlist": true,
+      "shortlist_mode": "passive_and_manual_research_only",
+      "scope_summary": "Public program with 52 listed scopes. Official policy says Node.js Hosting was just added as Challenge #6; exact hostname mapping for that product is not separately labeled.",
+      "reward_summary": "Base scope grids range from €100 to €7,000 by asset/severity; program statistics show a €15,000 historical maximum. The first valid report on the new Node.js Hosting perimeter receives +50%; no expiry is published.",
+      "automation_policy": "Automated scanners and high-traffic tools are prohibited; DoS, brute force and service degradation are prohibited.",
+      "access_requirements": "Public terms and product page are readable. YesWeHack hunter login is required to submit; use @yeswehack.ninja aliases and User-Agent Infomaniak-YWH-Bugbounty. The 30-day Node.js trial requires a valid credit card. 2FA unknown.",
+      "score_breakdown": {
+        "freshness": 4,
+        "scope_clarity": 4,
+        "reward_evidence": 5,
+        "automation_policy": 0,
+        "research_access": 4
+      },
+      "score": 72,
+      "score_status": "verified_active_bonus_manual_only",
+      "changes": [
+        {
+          "candidate": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
+          "type": "verified_scope_addition_and_active_bonus",
+          "from": null,
+          "to": "Node.js Hosting added to scope; Challenge #6 in progress; +50% for first valid report",
+          "observed_at": "2026-10-12T18:23:51+07:00",
+          "source_policy_updated_at": "2026-10-12",
+          "published_at": null,
+          "significant": true,
+          "note": "Official program page states the perimeter was just added and the challenge is in progress. Exact publication timestamp and expiry are not published."
+        }
+      ],
+      "evidence_urls": [
+        "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
+        "https://yeswehack.com/programs",
+        "https://www.infomaniak.com/en/hosting/nodejs-hosting",
+        "https://faq.infomaniak.com/2537"
+      ],
+      "limits": [
+        "Exact challenge publication timestamp is unavailable; published_at remains unknown.",
+        "No challenge expiry is published; status was in progress at checked_at.",
+        "The policy announces the Node.js scope addition but does not separately identify one definitive Node.js hostname in the scope table.",
+        "The linked FAQ returned an internal retrieval error.",
+        "No login, trial registration, credit-card use, target request, testing, scanning, payload, submission, or contact was performed."
+      ],
+      "next_passive_step": "Read official product/API documentation and public Infomaniak repositories to map components and identify the precise Node.js asset entry; do not send requests to targets or register a trial.",
+      "last_check_status": "verified_scope_addition_active_first_valid_report_bonus"
     }
   ],
-  "changes": [],
-  "errors": [],
+  "changes": [
+    {
+      "candidate": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
+      "type": "verified_scope_addition_and_active_bonus",
+      "from": null,
+      "to": "Node.js Hosting added to scope; Challenge #6 in progress; +50% for first valid report",
+      "observed_at": "2026-10-12T18:23:51+07:00",
+      "source_policy_updated_at": "2026-10-12",
+      "published_at": null,
+      "significant": true,
+      "note": "Official program page states the perimeter was just added and the challenge is in progress. Exact publication timestamp and expiry are not published."
+    },
+    {
+      "candidate": "Xelians — Blackbox program",
+      "type": "reward_evidence_correction",
+      "from": "directory max €150 vs detail max €1,500",
+      "to": "directory and detail both show max €1,500",
+      "observed_at": "2026-10-12T18:23:51+07:00",
+      "significant": false,
+      "note": "Current official directory resolves the previous source mismatch; no launch, scope or boost change inferred."
+    }
+  ],
+  "errors": [
+    {
+      "source": "https://faq.infomaniak.com/2537",
+      "error": "official documentation page returned an internal error during retrieval; program and vendor product pages remained readable",
+      "transient": true
+    },
+    {
+      "source": "https://bugcrowd.com/engagements",
+      "error": "public directory returned insufficient content for reliable program-diff verification",
+      "transient": true
+    }
+  ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Đã rà 10 ứng viên và 14 trang nguồn chính thức. Không xác minh launch, scope diff hay boost mới; ghi nhận 2 đầu mối YesWeHack cần xác minh, không xếp hạng. 0 bug, 0 bounty.",
+  "last_run_summary": "Đã rà 7 ứng viên trên 13 trang nguồn. Xác minh Infomaniak vừa thêm Node.js Hosting vào scope, Challenge #6 đang diễn ra và +50% cho báo cáo hợp lệ đầu tiên; automation bị cấm. 0 bug, 0 bounty.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -1971,51 +2067,117 @@
       "report_path": "bug-bounty-scout/reports/2026-10-12.md",
       "changes": [],
       "errors": []
+    },
+    {
+      "run_at": "2026-10-12T18:23:51+07:00",
+      "status": "completed_with_source_gaps",
+      "individual_candidates_evaluated": 7,
+      "unique_pages_opened": 13,
+      "official_search_queries": 4,
+      "verified_new_launches": 0,
+      "verified_scope_diffs": 1,
+      "verified_product_scope_additions": 1,
+      "verified_new_active_boosts": 1,
+      "new_verified_opportunities": 1,
+      "verification_corrections": 1,
+      "notification_required": true,
+      "active_scanning": false,
+      "bugs_found": 0,
+      "bounty_received": 0,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+      "changes": [
+        {
+          "candidate": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
+          "type": "verified_scope_addition_and_active_bonus",
+          "from": null,
+          "to": "Node.js Hosting added to scope; Challenge #6 in progress; +50% for first valid report",
+          "observed_at": "2026-10-12T18:23:51+07:00",
+          "source_policy_updated_at": "2026-10-12",
+          "published_at": null,
+          "significant": true,
+          "note": "Official program page states the perimeter was just added and the challenge is in progress. Exact publication timestamp and expiry are not published."
+        },
+        {
+          "candidate": "Xelians — Blackbox program",
+          "type": "reward_evidence_correction",
+          "from": "directory max €150 vs detail max €1,500",
+          "to": "directory and detail both show max €1,500",
+          "observed_at": "2026-10-12T18:23:51+07:00",
+          "significant": false,
+          "note": "Current official directory resolves the previous source mismatch; no launch, scope or boost change inferred."
+        }
+      ],
+      "errors": [
+        {
+          "source": "https://faq.infomaniak.com/2537",
+          "error": "official documentation page returned an internal error during retrieval; program and vendor product pages remained readable",
+          "transient": true
+        },
+        {
+          "source": "https://bugcrowd.com/engagements",
+          "error": "public directory returned insufficient content for reliable program-diff verification",
+          "transient": true
+        }
+      ]
     }
   ],
   "source_notices": [
     {
-      "source": "HackerOne",
-      "url": "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-      "checked_at": "2026-10-12T17:57:07+07:00",
-      "status": "readable_no_new_program_event",
-      "note": "Bài 2026-10-02 vẫn là cập nhật nền tảng, không phải chương trình bounty mới."
-    },
-    {
-      "source": "Bugcrowd",
-      "url": "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
-      "checked_at": "2026-10-12T17:57:07+07:00",
-      "status": "readable_platform_policy_only",
-      "note": "Bài 2026-10-08 về accuracy/throttling; không phải chương trình hoặc bounty boost."
-    },
-    {
-      "source": "Intigriti",
-      "url": "https://app.intigriti.com/programs/nexo/nexo/updates",
-      "checked_at": "2026-10-12T17:57:07+07:00",
-      "status": "readable_no_newer_program_change",
-      "note": "Nexo +50% cho High/Critical/Exceptional Tier 1/2 được đăng 2026-10-02; chưa thấy hạn kết thúc. Randstad ghi bonus tiếp tục ngày 2026-09-25; không có expiry xác nhận."
+      "source": "YesWeHack / Infomaniak",
+      "url": "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "verified_significant_change",
+      "note": "Challenge #6 Node.js Hosting is in progress; official page says the product was just added to scope and the first valid report receives +50%. Exact publication timestamp and expiry unknown."
     },
     {
       "source": "YesWeHack directory",
       "url": "https://yeswehack.com/programs",
-      "checked_at": "2026-10-12T17:57:07+07:00",
-      "status": "readable_two_new_unverified_snapshots",
-      "note": "Xelians và Pine Labs hiện Public, nhãn last update 2026-10-12; chưa xác minh launch hoặc nội dung thay đổi. Xelians có chênh lệch mức tối đa directory/detail; cả hai cấm scanners/high-traffic tools."
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "readable",
+      "note": "Infomaniak is listed Public with 52 scopes and €100–€7,000 directory reward range; Xelians now shows €50–€1,500, resolving the prior display discrepancy."
+    },
+    {
+      "source": "Intigriti",
+      "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "readable_no_new_verified_change",
+      "note": "Nexo and Randstad update pages showed no newer dated scope/bonus change than prior state."
+    },
+    {
+      "source": "HackerOne",
+      "url": "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "readable_no_new_program_event",
+      "note": "The latest checked researcher-platform article remains dated 2026-10-02; no new public program event verified."
+    },
+    {
+      "source": "Bugcrowd",
+      "url": "https://bugcrowd.com/engagements",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "directory_content_insufficient",
+      "note": "Public engagement directory extraction was insufficient; the 2026-10-08 accuracy/throttling blog remains platform policy, not a new bounty."
+    },
+    {
+      "source": "Infomaniak product documentation",
+      "url": "https://faq.infomaniak.com/2537",
+      "checked_at": "2026-10-12T18:23:51+07:00",
+      "status": "retrieval_error_non_blocking",
+      "note": "Linked FAQ returned an internal error. Vendor Node.js product page was readable and confirms a 30-day trial requiring a valid credit card."
     }
   ],
   "last_run_sources": [
-    "https://app.intigriti.com/programs/nexo/nexo/updates",
-    "https://app.intigriti.com/programs/randstad/randstad/updates",
-    "https://app.intigriti.com/programs/intigriti/intigriti/updates",
-    "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
-    "https://www.intigriti.com/researchers/bug-bounty-programs",
     "https://yeswehack.com/programs",
-    "https://yeswehack.com/programs/cryptobox-bug-bounty",
     "https://yeswehack.com/programs/xelians-blackbox-program",
     "https://yeswehack.com/programs/pine-labs-bug-bounty-program",
-    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
+    "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
+    "https://www.infomaniak.com/en/hosting/nodejs-hosting",
+    "https://faq.infomaniak.com/2537",
+    "https://www.intigriti.com/researchers/bug-bounty-programs",
+    "https://app.intigriti.com/programs/nexo/nexo/updates",
+    "https://app.intigriti.com/programs/randstad/randstad/updates",
     "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
     "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
-    "https://bugcrowd.com/engagements/openai"
+    "https://bugcrowd.com/engagements",
+    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397"
   ]
 }
