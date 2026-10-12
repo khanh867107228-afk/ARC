@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T21:56:24+07:00",
+  "last_run": "2026-10-12T22:37:22+07:00",
   "last_run_status": "completed_with_source_gaps",
-  "ranking_status": "verified_meaningful_opportunity_change",
+  "ranking_status": "no_new_verified_opportunities",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -19,7 +19,7 @@
         "Several new listings are VDP; do not assume payment."
       ],
       "score": 0,
-      "last_seen": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 0,
@@ -30,7 +30,7 @@
       "scope_summary": "Not individually verified",
       "changes": [],
       "access_requirements": "unknown",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "last_check_status": "official_directory_rechecked_no_new_verified_launch"
     },
     {
@@ -90,7 +90,7 @@
       "source_status": "insufficient_extracted_content",
       "policy_status": "unknown",
       "score": 0,
-      "last_seen": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
       "score_breakdown": {
         "freshness": 0,
         "scope_clarity": 0,
@@ -101,7 +101,7 @@
       "scope_summary": "Not individually verified",
       "changes": [],
       "access_requirements": "unknown",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "last_check_status": "directory_returned_insufficient_content"
     },
     {
@@ -283,8 +283,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -726,8 +726,8 @@
       "name": "Randstad",
       "url": "https://app.intigriti.com/programs/randstad/randstad",
       "first_seen": "2026-10-12T04:31:32+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "source_status": "official_detail_and_updates_readable",
       "policy_status": "vdp_no_standard_bounty_conditional_bonus_notice_current_status_unconfirmed_manual_only",
@@ -798,8 +798,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -857,7 +857,7 @@
         "No login, whitelist request, testing, submission, or contact was performed."
       ],
       "next_passive_step": "Monitor the canonical policy for harmonization of the remaining 'pinned commit' wording, plus the development branch, open PRs/issues and published advisories; if later researching manually, record the exact commit hash at start and recheck scope.",
-      "last_check_status": "canonical_scope_updated_to_latest_development_commit",
+      "last_check_status": "canonical_scope_unchanged_new_participant_comment_only",
       "policy_updated_at": "2026-10-12",
       "policy_updated_at_detail": "Author reply displays 2026-10-12 14:06; timezone not exposed.",
       "score_status": "verified_scope_change_with_residual_wording_ambiguity"
@@ -939,8 +939,8 @@
       "name": "Visma",
       "url": "https://app.intigriti.com/programs/visma/visma/detail",
       "first_seen": "2026-10-12T11:02:10+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": "unknown",
       "event_published_at": "2026-10-02",
       "event_type": "submissions_resumed",
@@ -986,7 +986,7 @@
       "name": "K15t (Bugcrowd)",
       "url": "https://bugcrowd.com/engagements/k15t",
       "first_seen": "2026-10-12T12:48:19+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "scope_summary": "Official Bugcrowd search extraction shows scope rating 3/4 and several Atlassian Marketplace app targets, but the complete target list could not be reliably extracted.",
@@ -1014,7 +1014,7 @@
           "note": "Direct program page still returns insufficient content; not eligible for shortlist."
         }
       ],
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "last_check_status": "direct_page_still_insufficient",
       "limits": "Current active status, full targets, exclusions and automation rules remain unverified; direct page returned only login links.",
       "evidence_urls": [
@@ -1303,8 +1303,8 @@
       "name": "Xelians — Blackbox program",
       "url": "https://yeswehack.com/programs/xelians-blackbox-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
@@ -1359,8 +1359,8 @@
       "name": "Pine Labs",
       "url": "https://yeswehack.com/programs/pine-labs-bug-bounty-program",
       "first_seen": "2026-10-12T17:57:07+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "published_at_status": "unknown",
       "policy_updated_at": "2026-10-12",
@@ -1408,8 +1408,8 @@
       "name": "Infomaniak Bug Bounty — Node.js Hosting Challenge",
       "url": "https://yeswehack.com/programs/infomaniak-bug-bounty-program",
       "first_seen": "2026-10-12T18:23:51+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": null,
       "published_at_status": "unknown_exact_challenge_timestamp",
       "policy_updated_at": "2026-10-12",
@@ -1461,8 +1461,8 @@
       "next_passive_step": "Read official product/API documentation and public Infomaniak repositories to map components and identify the precise Node.js asset entry; do not send requests to targets or register a trial.",
       "last_check_status": "challenge_still_in_progress_no_new_diff",
       "activity_snapshot": {
-        "reports": 3908,
-        "observed_at": "2026-10-12T21:56:24+07:00",
+        "reports": 3909,
+        "observed_at": "2026-10-12T22:37:22+07:00",
         "note": "Report count increased by one; activity only, not a policy, scope, reward, or launch change."
       }
     },
@@ -1470,8 +1470,8 @@
       "name": "Arm Trusted Firmware",
       "url": "https://app.intigriti.com/programs/arm/trustedfirmware/detail",
       "first_seen": "2026-10-12T20:32:23+07:00",
-      "last_seen": "2026-10-12T21:56:24+07:00",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "published_at": "2026-10-05",
       "published_at_detail": "Official update displays 10/5/2026 3:26:28 PM; public page does not expose timezone.",
       "scope_summary": "TrustedFirmware-A, TrustedFirmware-M, TF-PSA-Crypto and OP-TEE are listed, but new bounty submissions are temporarily paused.",
@@ -1517,21 +1517,70 @@
       ],
       "next_passive_step": "Monitor the official update feed for a reopening notice expected after the review in 2027; do not test or submit while paused.",
       "last_check_status": "official_pause_rechecked_unchanged"
+    },
+    {
+      "name": "Files.com",
+      "url": "https://hackerone.com/files",
+      "first_seen": "2026-10-12T22:37:22+07:00",
+      "last_seen": "2026-10-12T22:37:22+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
+      "published_at": null,
+      "published_at_status": "unknown",
+      "scope_summary": "Unknown; direct HackerOne policy extraction returned insufficient content.",
+      "policy_status": "needs_verification_current_status_scope_and_automation",
+      "source_status": "official_search_extract_partial_direct_page_insufficient",
+      "program_status": "needs_verification",
+      "eligible_for_shortlist": false,
+      "reward_summary": "Official HackerOne search extract states $250-$50,000 per valid report based on severity and value; full policy not extracted.",
+      "automation_policy": "unknown",
+      "access_requirements": "HackerOne account may be required for full policy/submission; 2FA unknown; no login performed.",
+      "score_breakdown": {
+        "freshness": 0,
+        "scope_clarity": 0,
+        "reward_evidence": 4,
+        "automation_policy": 0,
+        "research_access": 1
+      },
+      "score": 19,
+      "score_status": "unverified_not_ranked",
+      "changes": [
+        {
+          "candidate": "Files.com",
+          "type": "new_unverified_lead",
+          "from": null,
+          "to": "official HackerOne extract shows $250-$50,000 reward range; full policy not extracted",
+          "observed_at": "2026-10-12T22:37:22+07:00",
+          "published_at": null,
+          "significant": false,
+          "verified": false,
+          "note": "Current status, scope, policy date and automation rules remain unverified; not shortlist-eligible."
+        }
+      ],
+      "evidence_urls": [
+        "https://hackerone.com/files",
+        "https://www.files.com/"
+      ],
+      "limits": [
+        "Direct HackerOne page returned insufficient content.",
+        "Current submission status, full scope, exclusions, policy update date and automation limits are unverified.",
+        "Crawl date is not treated as launch or publication date.",
+        "No login, testing, payload, submission, or contact was performed."
+      ],
+      "next_passive_step": "Retry the official HackerOne policy and locate the vendor's public security/disclosure policy before ranking or testing.",
+      "last_check_status": "partial_reward_evidence_only"
     }
   ],
   "changes": [
     {
-      "candidate": "Tari Ootle Bug Hunt",
-      "type": "verified_scope_change",
-      "from": "target pinned to commit 392d805579db35fcc8e8bc1aba84adc1fffe0c22",
-      "to": "target is the latest development branch commit; check open PRs/issues and published advisories for duplicates",
-      "observed_at": "2026-10-12T21:56:24+07:00",
-      "source_policy_updated_at": "2026-10-12",
-      "source_display_time": "2026-10-12 14:06; timezone not exposed",
-      "published_at": "2026-10-01",
-      "significant": true,
-      "verified_scope_diff": true,
-      "note": "Canonical Scope text and author confirmation verify the change; later Rules/Submission text still retains 'pinned commit', so scope clarity is 4/5."
+      "candidate": "Files.com",
+      "type": "new_unverified_lead",
+      "from": null,
+      "to": "official HackerOne extract shows $250-$50,000 reward range; full policy not extracted",
+      "observed_at": "2026-10-12T22:37:22+07:00",
+      "published_at": null,
+      "significant": false,
+      "verified": false,
+      "note": "Current status, scope, policy date and automation rules remain unverified; not shortlist-eligible."
     }
   ],
   "errors": [
@@ -1544,12 +1593,17 @@
       "source": "https://bugcrowd.com/engagements/k15t",
       "error": "direct program page returned only login links; current status, full scope and automation rules remain unverified",
       "transient": true
+    },
+    {
+      "source": "https://hackerone.com/files",
+      "error": "direct policy page returned insufficient content; only a partial official search extract was available",
+      "transient": true
     }
   ],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Đã rà 10 ứng viên trên 15 trang chính thức. Xác minh Tari Ootle đổi scope từ commit cố định sang latest development branch commit; một số đoạn phụ vẫn còn cụm 'pinned commit' nên scope clarity là 4/5. Không có launch hay boost mới. 0 bug, 0 bounty.",
+  "last_run_summary": "Đã rà 10 ứng viên trên 15 trang chính thức; không có launch, scope diff hay boost mới được xác minh. Ghi Files.com là đầu mối chưa xác minh; Tari chỉ có bình luận hoạt động mới. 0 bug, 0 bounty.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -2355,41 +2409,89 @@
           "transient": true
         }
       ]
+    },
+    {
+      "run_at": "2026-10-12T22:37:22+07:00",
+      "status": "completed_with_source_gaps",
+      "individual_candidates_evaluated": 10,
+      "unique_pages_opened": 15,
+      "official_search_queries": 6,
+      "verified_new_launches": 0,
+      "verified_scope_diffs": 0,
+      "verified_product_scope_additions": 0,
+      "verified_new_active_boosts": 0,
+      "new_verified_opportunities": 0,
+      "new_unverified_leads": 1,
+      "notification_required": false,
+      "active_scanning": false,
+      "bugs_found": 0,
+      "bounty_received": 0,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+      "changes": [
+        {
+          "candidate": "Files.com",
+          "type": "new_unverified_lead",
+          "from": null,
+          "to": "official HackerOne extract shows $250-$50,000 reward range; full policy not extracted",
+          "observed_at": "2026-10-12T22:37:22+07:00",
+          "published_at": null,
+          "significant": false,
+          "verified": false,
+          "note": "Current status, scope, policy date and automation rules remain unverified; not shortlist-eligible."
+        }
+      ],
+      "errors": [
+        {
+          "source": "https://bugcrowd.com/engagements",
+          "error": "public directory returned insufficient content for reliable program-diff verification",
+          "transient": true
+        },
+        {
+          "source": "https://bugcrowd.com/engagements/k15t",
+          "error": "direct program page returned only login links; current status, full scope and automation rules remain unverified",
+          "transient": true
+        },
+        {
+          "source": "https://hackerone.com/files",
+          "error": "direct policy page returned insufficient content; only a partial official search extract was available",
+          "transient": true
+        }
+      ]
     }
   ],
   "source_notices": [
     {
       "source": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
-      "checked_at": "2026-10-12T21:56:24+07:00",
-      "status": "verified_canonical_scope_change",
-      "note": "Canonical Scope now targets the latest development branch commit and the author confirms the edit; later Rules/Submission text still retains 'pinned commit'."
+      "checked_at": "2026-10-12T22:37:22+07:00",
+      "status": "canonical_policy_unchanged",
+      "note": "Scope remains latest development branch commit with residual 'pinned commit' wording; new participant comment is activity only."
     },
     {
       "source": "YesWeHack",
       "url": "https://yeswehack.com/programs",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "status": "readable_no_new_verified_diff",
-      "note": "Infomaniak Challenge #6 remains active; Xelians and Pine Labs unchanged. Report-count movements are activity only."
+      "note": "Infomaniak challenge remains active; Xelians and Pine Labs unchanged. Report-count movements are activity only."
     },
     {
       "source": "Intigriti",
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
-      "checked_at": "2026-10-12T21:56:24+07:00",
-      "status": "readable_no_other_new_verified_change",
-      "note": "Nexo, Randstad, Intigriti platform, Arm and Visma show no newer relevant policy event."
+      "checked_at": "2026-10-12T22:37:22+07:00",
+      "status": "readable_no_new_verified_change",
+      "note": "Nexo, Randstad, Arm and Visma show no newer relevant policy event."
     },
     {
-      "source": "HackerOne",
-      "url": "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-      "checked_at": "2026-10-12T21:56:24+07:00",
-      "status": "readable_no_new_program_event",
-      "note": "Platform article is not a new bounty launch, scope diff or boost."
+      "source": "HackerOne / Files.com",
+      "url": "https://hackerone.com/files",
+      "checked_at": "2026-10-12T22:37:22+07:00",
+      "status": "partial_extract_needs_verification",
+      "note": "Reward range is visible in official search extract, but direct policy content, current status, scope and automation rules are unverified."
     },
     {
       "source": "Bugcrowd",
       "url": "https://bugcrowd.com/engagements",
-      "checked_at": "2026-10-12T21:56:24+07:00",
+      "checked_at": "2026-10-12T22:37:22+07:00",
       "status": "directory_content_insufficient",
       "note": "Directory and direct K15t extraction remain incomplete; no change inferred."
     }
@@ -2402,13 +2504,13 @@
     "https://www.intigriti.com/researchers/bug-bounty-programs",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
     "https://app.intigriti.com/programs/randstad/randstad/updates",
-    "https://app.intigriti.com/programs/intigriti/intigriti/updates",
     "https://app.intigriti.com/programs/arm/trustedfirmware/updates",
     "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
     "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
     "https://bugcrowd.com/engagements",
     "https://bugcrowd.com/engagements/k15t",
-    "https://app.intigriti.com/programs/visma/visma/detail"
+    "https://hackerone.com/files",
+    "https://app.intigriti.com/programs/visma/visma/detail",
+    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/"
   ]
 }
