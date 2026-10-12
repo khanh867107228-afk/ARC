@@ -803,8 +803,8 @@
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
-      "scope_summary": "Target is tari-project/tari-ootle at the latest development branch commit. Researchers must check existing pull requests, issues and published advisories; named crates/tier rules in the policy continue to apply.",
-      "policy_status": "contest_and_standing_policy_verified_scope_updated",
+      "scope_summary": "Canonical Scope targets tari-project/tari-ootle at the latest development branch commit and requires checking existing pull requests, issues and published advisories. Later Rules/Submission text still says 'pinned commit', so wording is not fully harmonized.",
+      "policy_status": "contest_scope_update_verified_internal_wording_inconsistency",
       "source_status": "official_event_page_canonical_body_and_author_confirmation_readable",
       "program_status": "within_advertised_window_scope_updated",
       "eligible_for_shortlist": true,
@@ -813,12 +813,12 @@
       "access_requirements": "GitHub private advisory and whitelist per October 9 reply; 2FA unknown. Sanctions/payment eligibility unverified.",
       "score_breakdown": {
         "freshness": 4,
-        "scope_clarity": 5,
+        "scope_clarity": 4,
         "reward_evidence": 4,
         "automation_policy": 4,
         "research_access": 5
       },
-      "score": 88,
+      "score": 83,
       "changes": [
         {
           "candidate": "Tari Ootle Bug Hunt",
@@ -842,7 +842,7 @@
           "published_at": "2026-10-01",
           "significant": true,
           "verified_scope_diff": true,
-          "note": "Canonical policy text now contains the new scope wording and the original author confirms the edit."
+          "note": "Canonical Scope text and author confirmation verify the change; later Rules/Submission text still retains 'pinned commit', so scope clarity is 4/5."
         }
       ],
       "evidence_urls": [
@@ -851,14 +851,16 @@
       ],
       "limits": [
         "The development branch is a moving target; no single commit hash remains valid indefinitely.",
+        "The canonical Scope line says latest development branch commit, while later Rules/Submission text still says 'pinned commit'.",
         "The source displays the confirming reply at 14:06 without exposing a timezone.",
         "Existing PRs, issues and published advisories must be checked for duplicates.",
         "No login, whitelist request, testing, submission, or contact was performed."
       ],
-      "next_passive_step": "Monitor the canonical policy plus development branch, open PRs/issues and published advisories; if later researching manually, record the exact commit hash at start and recheck scope before any test.",
+      "next_passive_step": "Monitor the canonical policy for harmonization of the remaining 'pinned commit' wording, plus the development branch, open PRs/issues and published advisories; if later researching manually, record the exact commit hash at start and recheck scope.",
       "last_check_status": "canonical_scope_updated_to_latest_development_commit",
       "policy_updated_at": "2026-10-12",
-      "policy_updated_at_detail": "Author reply displays 2026-10-12 14:06; timezone not exposed."
+      "policy_updated_at_detail": "Author reply displays 2026-10-12 14:06; timezone not exposed.",
+      "score_status": "verified_scope_change_with_residual_wording_ambiguity"
     },
     {
       "name": "Intigriti platform bug bounty",
@@ -1529,7 +1531,7 @@
       "published_at": "2026-10-01",
       "significant": true,
       "verified_scope_diff": true,
-      "note": "Canonical policy text now contains the new scope wording and the original author confirms the edit."
+      "note": "Canonical Scope text and author confirmation verify the change; later Rules/Submission text still retains 'pinned commit', so scope clarity is 4/5."
     }
   ],
   "errors": [
@@ -1547,7 +1549,7 @@
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Đã rà 10 ứng viên trên 15 trang chính thức. Xác minh Tari Ootle đổi scope từ commit cố định sang latest development branch commit; không có launch hay boost mới. 0 bug, 0 bounty.",
+  "last_run_summary": "Đã rà 10 ứng viên trên 15 trang chính thức. Xác minh Tari Ootle đổi scope từ commit cố định sang latest development branch commit; một số đoạn phụ vẫn còn cụm 'pinned commit' nên scope clarity là 4/5. Không có launch hay boost mới. 0 bug, 0 bounty.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -2338,7 +2340,7 @@
           "published_at": "2026-10-01",
           "significant": true,
           "verified_scope_diff": true,
-          "note": "Canonical policy text now contains the new scope wording and the original author confirms the edit."
+          "note": "Canonical Scope text and author confirmation verify the change; later Rules/Submission text still retains 'pinned commit', so scope clarity is 4/5."
         }
       ],
       "errors": [
@@ -2361,7 +2363,7 @@
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "checked_at": "2026-10-12T21:56:24+07:00",
       "status": "verified_canonical_scope_change",
-      "note": "Canonical body now targets the latest development branch commit; author confirms the edit on 2026-10-12."
+      "note": "Canonical Scope now targets the latest development branch commit and the author confirms the edit; later Rules/Submission text still retains 'pinned commit'."
     },
     {
       "source": "YesWeHack",
