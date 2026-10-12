@@ -2,7 +2,7 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T15:47:57+07:00",
+  "last_run": "2026-10-12T16:30:05+07:00",
   "last_run_status": "completed",
   "ranking_status": "no_new_verified_opportunities",
   "candidates": [
@@ -283,8 +283,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T15:47:57+07:00",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -326,7 +326,7 @@
       "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
       "score": 83,
       "last_check_status": "updates_checked_no_newer_announcement",
-      "last_updates_seen": "2026-10-12T15:47:57+07:00"
+      "last_updates_seen": "2026-10-12T16:30:05+07:00"
     },
     {
       "name": "Omarchy",
@@ -403,8 +403,8 @@
       "score": 0
     },
     {
-      "last_seen": "2026-10-12T15:47:57+07:00",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": null,
       "source_status": "readable",
       "score_breakdown": {
@@ -438,7 +438,7 @@
       "last_check_status": "official_page_unchanged_automation_still_unknown",
       "activity_snapshot": {
         "reports": 426,
-        "observed_at": "2026-10-12T15:47:57+07:00",
+        "observed_at": "2026-10-12T16:30:05+07:00",
         "note": "Activity count only; not a policy, scope, reward, or launch change."
       }
     },
@@ -798,8 +798,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-12T15:47:57+07:00",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -832,8 +832,8 @@
       "name": "Intigriti platform bug bounty",
       "url": "https://app.intigriti.com/programs/intigriti/intigriti/detail",
       "first_seen": "2026-10-12T07:16:06+07:00",
-      "last_seen": "2026-10-12T15:47:57+07:00",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": "unknown",
       "scope_summary": "Tier 2: *.pwn.intigriti.rocks; Tier 3: www.intigriti.com and *.intigriti.me; Tier 4 includes VPN/metabase PWN assets. The policy explicitly lists numerous out-of-scope assets.",
       "policy_status": "verified_current_policy",
@@ -905,8 +905,8 @@
       "name": "Visma",
       "url": "https://app.intigriti.com/programs/visma/visma/detail",
       "first_seen": "2026-10-12T11:02:10+07:00",
-      "last_seen": "2026-10-12T15:47:57+07:00",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": "unknown",
       "event_published_at": "2026-10-02",
       "event_type": "submissions_resumed",
@@ -982,8 +982,8 @@
       "url": "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
       "first_seen": "2026-10-12",
       "first_seen_basis": "First observed in user-provided Intigriti dashboard snapshot dated 2026-10-12; this is not a program launch date.",
-      "last_seen": "2026-10-12T13:49:40+07:00",
-      "checked_at": "2026-10-12T13:49:40+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": null,
       "published_at_status": "unknown_launch_date",
       "scope_summary": "Listed Exoscale cloud control plane endpoints/domains spanning compute, storage, networking, DBaaS and IAM. Customer accounts, data, resources and infrastructure are expressly out of scope; any unlisted domain is out of scope; Aiven-side DBaaS issues are not guaranteed to receive a bounty.",
@@ -1031,15 +1031,16 @@
         "No login, credential request, account creation, testing, scanning or submission performed.",
         "€25 validation-latency amount is discretionary and not a bounty boost."
       ],
-      "next_passive_step": "Read Exoscale's public documentation and compare the named authorized assets/exclusions before any separately authorized testing."
+      "next_passive_step": "Read Exoscale's public documentation and compare the named authorized assets/exclusions before any separately authorized testing.",
+      "last_check_status": "official_policy_rechecked_no_material_change"
     },
     {
       "name": "Venly",
       "url": "https://app.intigriti.com/programs/arkane/arkanenetwork/detail",
       "first_seen": "2026-10-12",
       "first_seen_basis": "First observed in user-provided Intigriti dashboard snapshot dated 2026-10-12; this is not a program launch date.",
-      "last_seen": "2026-10-12T13:49:40+07:00",
-      "checked_at": "2026-10-12T13:49:40+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": null,
       "published_at_status": "unknown_launch_date",
       "scope_summary": "Venly Wallet UI and Wallet API; official asset list names in-scope hosts and tiers. A 14-day API trial and lower-tier sandbox/testnet are described; production environment uses real-value tokens.",
@@ -1087,15 +1088,16 @@
         "Automatic scanners prohibited; production uses real-value tokens.",
         "No signup, account creation, testing, scan or submission performed; 2FA requirement not stated."
       ],
-      "next_passive_step": "Read public API documentation and use the documented sandbox/testnet only if future testing is separately authorized."
+      "next_passive_step": "Read public API documentation and use the documented sandbox/testnet only if future testing is separately authorized.",
+      "last_check_status": "official_policy_rechecked_no_material_change"
     },
     {
       "name": "DPG Media",
       "url": "https://app.intigriti.com/programs/dpgm/dpgmedia/detail",
       "first_seen": "2026-10-12",
       "first_seen_basis": "First observed in user-provided Intigriti dashboard snapshot dated 2026-10-12; this is not a program launch date.",
-      "last_seen": "2026-10-12T13:49:40+07:00",
-      "checked_at": "2026-10-12T13:49:40+07:00",
+      "last_seen": "2026-10-12T16:30:05+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "published_at": null,
       "published_at_status": "unknown_launch_date",
       "scope_summary": "*.dpgmedia.be and *.dpgmedia.nl are Tier 2; related DPG domains are Tier 3. Several specific domains/products are out of scope. The policy states that credentials for user roles are not currently provided.",
@@ -1155,7 +1157,8 @@
         "No role credentials, login, testing or account creation; 2FA requirement not stated.",
         "2026-02-27 update is a historical scope change, not evidence of a new launch or current change."
       ],
-      "next_passive_step": "Recheck official tier rewards and any logged-in program note before investing research time; exclude brands and infrastructure explicitly removed from scope."
+      "next_passive_step": "Recheck official tier rewards and any logged-in program note before investing research time; exclude brands and infrastructure explicitly removed from scope.",
+      "last_check_status": "official_policy_rechecked_no_material_change"
     },
     {
       "name": "SolarWinds SaaS BBP",
@@ -1256,7 +1259,7 @@
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Đã đối chiếu 5 ứng viên trên 8 trang nguồn chính thức; không có launch, scope diff, bounty boost hoặc sản phẩm mới được xác minh. Heartbeat đã ghi; không quét hay nộp báo cáo.",
+  "last_run_summary": "Đã đối chiếu 8 ứng viên trên 11 trang nguồn chính thức; không có launch, scope diff, bounty boost hoặc sản phẩm mới được xác minh. Không quét, đăng nhập hay nộp báo cáo.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -1834,37 +1837,58 @@
       "report_path": "bug-bounty-scout/reports/2026-10-12.md",
       "changes": [],
       "errors": []
+    },
+    {
+      "run_at": "2026-10-12T16:30:05+07:00",
+      "status": "completed",
+      "individual_candidates_evaluated": 8,
+      "unique_pages_opened": 11,
+      "official_search_queries": 4,
+      "verified_new_launches": 0,
+      "verified_scope_diffs": 0,
+      "verified_new_active_boosts": 0,
+      "new_unverified_leads": 0,
+      "notification_required": false,
+      "active_scanning": false,
+      "bugs_found": 0,
+      "bounty_received": 0,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+      "changes": [],
+      "errors": []
     }
   ],
   "source_notices": [
     {
       "source": "HackerOne",
       "url": "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "status": "readable_no_new_program_event",
-      "note": "Bài gần nhất được kiểm tra vẫn ngày 2026-10-02 và mô tả thay đổi nền tảng, không phải bounty mới."
+      "note": "Bài gần nhất được kiểm tra vẫn ngày 2026-10-02 và mô tả thay đổi nền tảng."
     },
     {
       "source": "Bugcrowd",
       "url": "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "status": "readable_platform_policy_only",
       "note": "Bài ngày 2026-10-08 về accuracy/throttling; không phải chương trình hoặc boost mới."
     },
     {
       "source": "YesWeHack directory",
       "url": "https://yeswehack.com/programs",
-      "checked_at": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T16:30:05+07:00",
       "status": "readable_no_newer_listing_update",
-      "note": "Mốc cập nhật mới nhất quan sát được vẫn 2026-10-08; số report không được coi là thay đổi policy."
+      "note": "Mốc cập nhật mới nhất quan sát được vẫn 2026-10-08; biến động số report không phải thay đổi policy."
     }
   ],
   "last_run_sources": [
+    "https://yeswehack.com/programs",
+    "https://yeswehack.com/programs/cryptobox-bug-bounty",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
     "https://app.intigriti.com/programs/visma/visma/updates",
     "https://app.intigriti.com/programs/intigriti/intigriti/updates",
-    "https://yeswehack.com/programs",
-    "https://yeswehack.com/programs/cryptobox-bug-bounty",
+    "https://app.intigriti.com/programs/exoscale/excoscalebugbounty/detail",
+    "https://app.intigriti.com/programs/arkane/arkanenetwork/detail",
+    "https://app.intigriti.com/programs/dpgm/dpgmedia/detail",
     "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
     "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
     "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/"
