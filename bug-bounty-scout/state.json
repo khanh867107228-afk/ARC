@@ -2,8 +2,8 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T14:59:23+07:00",
-  "last_run_status": "completed_with_source_gaps",
+  "last_run": "2026-10-12T15:47:57+07:00",
+  "last_run_status": "completed",
   "ranking_status": "no_new_verified_opportunities",
   "candidates": [
     {
@@ -283,8 +283,8 @@
       "name": "Nexo",
       "url": "https://app.intigriti.com/programs/nexo/nexo",
       "first_seen": "2026-10-12T00:43:55+07:00",
-      "last_seen": "2026-10-12T14:59:23+07:00",
-      "checked_at": "2026-10-12T14:59:23+07:00",
+      "last_seen": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T15:47:57+07:00",
       "published_at": null,
       "published_at_status": "unknown_program_launch",
       "event_type": "bounty_bonus_announcement",
@@ -326,7 +326,7 @@
       "next_passive_step": "Watch updates for bonus expiry/withdrawal; locate public API docs and onboarding restrictions without account creation.",
       "score": 83,
       "last_check_status": "updates_checked_no_newer_announcement",
-      "last_updates_seen": "2026-10-12T14:59:23+07:00"
+      "last_updates_seen": "2026-10-12T15:47:57+07:00"
     },
     {
       "name": "Omarchy",
@@ -403,8 +403,8 @@
       "score": 0
     },
     {
-      "last_seen": "2026-10-12T14:59:23+07:00",
-      "checked_at": "2026-10-12T14:59:23+07:00",
+      "last_seen": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T15:47:57+07:00",
       "published_at": null,
       "source_status": "readable",
       "score_breakdown": {
@@ -438,7 +438,7 @@
       "last_check_status": "official_page_unchanged_automation_still_unknown",
       "activity_snapshot": {
         "reports": 426,
-        "observed_at": "2026-10-12T14:59:23+07:00",
+        "observed_at": "2026-10-12T15:47:57+07:00",
         "note": "Activity count only; not a policy, scope, reward, or launch change."
       }
     },
@@ -798,8 +798,8 @@
       "name": "Tari Ootle Bug Hunt",
       "url": "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
       "first_seen": "2026-10-12T05:54:23+07:00",
-      "last_seen": "2026-10-12T14:59:23+07:00",
-      "checked_at": "2026-10-12T14:59:23+07:00",
+      "last_seen": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T15:47:57+07:00",
       "published_at": "2026-10-01",
       "event_start_at": "2026-10-01",
       "event_end_at": "2026-11-01T00:00:00Z",
@@ -826,14 +826,14 @@
       ],
       "limits": "No test, contact or submission; access eligibility unverified.",
       "next_passive_step": "Read pinned source and published duplicate list.",
-      "last_check_status": "no_material_change"
+      "last_check_status": "official_contest_terms_unchanged"
     },
     {
       "name": "Intigriti platform bug bounty",
       "url": "https://app.intigriti.com/programs/intigriti/intigriti/detail",
       "first_seen": "2026-10-12T07:16:06+07:00",
-      "last_seen": "2026-10-12T14:59:23+07:00",
-      "checked_at": "2026-10-12T14:59:23+07:00",
+      "last_seen": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T15:47:57+07:00",
       "published_at": "unknown",
       "scope_summary": "Tier 2: *.pwn.intigriti.rocks; Tier 3: www.intigriti.com and *.intigriti.me; Tier 4 includes VPN/metabase PWN assets. The policy explicitly lists numerous out-of-scope assets.",
       "policy_status": "verified_current_policy",
@@ -863,7 +863,7 @@
         "Recheck policy immediately before any authorized testing."
       ],
       "next_passive_step": "Monitor the official Updates tab and public policy for dated scope/reward changes; keep research passive until current authorization is reconfirmed.",
-      "last_check_status": "updates_checked_no_october_change"
+      "last_check_status": "updates_checked_no_october_announcement"
     },
     {
       "name": "NxtPort VDP",
@@ -905,8 +905,8 @@
       "name": "Visma",
       "url": "https://app.intigriti.com/programs/visma/visma/detail",
       "first_seen": "2026-10-12T11:02:10+07:00",
-      "last_seen": "2026-10-12T14:59:23+07:00",
-      "checked_at": "2026-10-12T14:59:23+07:00",
+      "last_seen": "2026-10-12T15:47:57+07:00",
+      "checked_at": "2026-10-12T15:47:57+07:00",
       "published_at": "unknown",
       "event_published_at": "2026-10-02",
       "event_type": "submissions_resumed",
@@ -946,7 +946,7 @@
         "No login, testing, payload or submission."
       ],
       "next_passive_step": "Read individual asset descriptions and public integration documentation; recheck policy before testing.",
-      "last_check_status": "no_material_change"
+      "last_check_status": "updates_checked_no_newer_announcement"
     },
     {
       "name": "K15t (Bugcrowd)",
@@ -1251,33 +1251,12 @@
       "last_check_status": "direct_official_url_404"
     }
   ],
-  "changes": [
-    {
-      "candidate": "NCS - Public Bug Bounty Program",
-      "type": "unverified_lead_added",
-      "from": null,
-      "to": "needs_current_status_verification",
-      "observed_at": "2026-10-12T14:59:23+07:00",
-      "significant": false,
-      "note": "Cached official search result contained policy, but the direct official URL returned 404. Not treated as active."
-    }
-  ],
-  "errors": [
-    {
-      "source": "https://yeswehack.com/programs/ncs-public-bug-bounty-program",
-      "error": "official direct program URL returned 404; cached official search result may be stale, so current status and policy are unverified",
-      "transient": false
-    },
-    {
-      "source": "https://app.intigriti.com/programs/arkane/arkanenetwork/updates",
-      "error": "updates page fetch failed with internal error; retained prior verified detail snapshot without inferring change",
-      "transient": true
-    }
-  ],
+  "changes": [],
+  "errors": [],
   "automation_id": "6acbba2cf7408191be3e5bb1f26efaa1",
   "schedule": "hourly",
   "automation_enabled": true,
-  "last_run_summary": "Six candidates reviewed. No verified new launch, scope change, active boost, or product change. Nexo, Visma, Intigriti, Cryptobox and Tari were unchanged. NCS was recorded only as an unverified stale-index lead because the official URL returned 404. No bug found or bounty received.",
+  "last_run_summary": "Đã đối chiếu 5 ứng viên trên 8 trang nguồn chính thức; không có launch, scope diff, bounty boost hoặc sản phẩm mới được xác minh. Heartbeat đã ghi; không quét hay nộp báo cáo.",
   "run_history": [
     {
       "checked_at": "2026-10-11T23:33:09+07:00",
@@ -1837,47 +1816,57 @@
           "transient": true
         }
       ]
+    },
+    {
+      "run_at": "2026-10-12T15:47:57+07:00",
+      "status": "completed",
+      "individual_candidates_evaluated": 5,
+      "unique_pages_opened": 8,
+      "official_search_queries": 8,
+      "verified_new_launches": 0,
+      "verified_scope_diffs": 0,
+      "verified_new_active_boosts": 0,
+      "new_unverified_leads": 0,
+      "notification_required": false,
+      "active_scanning": false,
+      "bugs_found": 0,
+      "bounty_received": 0,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+      "changes": [],
+      "errors": []
     }
   ],
   "source_notices": [
     {
-      "url": "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
-      "published_at": "2026-10-08",
-      "checked_at": "2026-10-12T13:49:40+07:00",
-      "source_status": "official_article_readable",
-      "summary": "Verified current platform update: N/A counts as rejected, informational outcomes do not affect accuracy, accuracy has no payout threshold; new accounts are throttled by default; throttled accounts capped at six submissions/week, subject to stated thresholds. This is platform policy, not an individual bounty.",
-      "limits": "Researcher's Bugcrowd account status not known; no individual program policy verified.",
-      "next_passive_step": "Read the linked official accuracy, throttling and identity documentation before any Bugcrowd participation."
-    },
-    {
-      "url": "https://yeswehack.com/programs",
-      "checked_at": "2026-10-12T00:43:55+07:00",
-      "source_status": "readable",
-      "published_at": null,
-      "summary": "Directory now readable unlike prior /programs attempt. Cryptobox listing: €100-€5,000, last update 2026-10-08; update label is not launch or verified scope change.",
-      "limits": "Directory only; individual terms, tooling and login/2FA unknown. Not scored or shortlisted.",
-      "next_passive_step": "Read individual Cryptobox program policy next pass within source budget."
-    },
-    {
+      "source": "HackerOne",
       "url": "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-      "published_at": "2026-10-02",
-      "checked_at": "2026-10-12T13:49:40+07:00",
-      "source_status": "official_article_readable",
-      "summary": "Platform researcher update: structured scope/reward groups and an API for excluded report categories; not a new individual program or bounty boost.",
-      "limits": "No per-program scope change verified in this run.",
-      "next_passive_step": "Recheck individual program policy and scope rather than relying on platform-level update."
+      "checked_at": "2026-10-12T15:47:57+07:00",
+      "status": "readable_no_new_program_event",
+      "note": "Bài gần nhất được kiểm tra vẫn ngày 2026-10-02 và mô tả thay đổi nền tảng, không phải bounty mới."
+    },
+    {
+      "source": "Bugcrowd",
+      "url": "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
+      "checked_at": "2026-10-12T15:47:57+07:00",
+      "status": "readable_platform_policy_only",
+      "note": "Bài ngày 2026-10-08 về accuracy/throttling; không phải chương trình hoặc boost mới."
+    },
+    {
+      "source": "YesWeHack directory",
+      "url": "https://yeswehack.com/programs",
+      "checked_at": "2026-10-12T15:47:57+07:00",
+      "status": "readable_no_newer_listing_update",
+      "note": "Mốc cập nhật mới nhất quan sát được vẫn 2026-10-08; số report không được coi là thay đổi policy."
     }
   ],
   "last_run_sources": [
-    "https://yeswehack.com/programs/ncs-public-bug-bounty-program",
-    "https://yeswehack.com/programs",
-    "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
-    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/",
     "https://app.intigriti.com/programs/nexo/nexo/updates",
     "https://app.intigriti.com/programs/visma/visma/updates",
     "https://app.intigriti.com/programs/intigriti/intigriti/updates",
-    "https://app.intigriti.com/programs/arkane/arkanenetwork/updates",
+    "https://yeswehack.com/programs",
     "https://yeswehack.com/programs/cryptobox-bug-bounty",
-    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397"
+    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
+    "https://www.hackerone.com/blog/whats-new-for-hackerone-researchers",
+    "https://www.bugcrowd.com/blog/evolving-our-submission-accuracy-and-throttling-controls-to-protect-triage-speed/"
   ]
 }
