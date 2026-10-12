@@ -2,9 +2,9 @@
   "schema_version": 1,
   "mode": "passive_opportunity_scout",
   "timezone": "Asia/Ho_Chi_Minh",
-  "last_run": "2026-10-12T11:02:10+07:00",
+  "last_run": "2026-10-12T11:41:18+07:00",
   "last_run_status": "completed_with_source_gaps",
-  "ranking_status": "no_new_verified_material_change",
+  "ranking_status": "verification_upgraded",
   "candidates": [
     {
       "url": "https://www.intigriti.com/researchers/bug-bounty-programs",
@@ -889,50 +889,69 @@
       "name": "Visma",
       "url": "https://app.intigriti.com/programs/visma/visma/detail",
       "first_seen": "2026-10-12T11:02:10+07:00",
-      "last_seen": "2026-10-12T11:02:10+07:00",
-      "checked_at": "2026-10-12T11:02:10+07:00",
+      "last_seen": "2026-10-12T11:41:18+07:00",
+      "checked_at": "2026-10-12T11:41:18+07:00",
       "published_at": "unknown",
       "event_published_at": "2026-10-02",
       "event_type": "submissions_resumed",
-      "scope_summary": "Current full scope not verified. AI Assistant scope announcement was dated 2024-09-02, not a new 2026 addition.",
-      "policy_status": "needs_verification",
-      "source_status": "official_updates_verified_detail_not_read",
+      "scope_summary": "Explicit Tier 2 staging service domains including Visma identity/accounting/AI Assistant, Workbox and Maventa environments plus listed mobile apps. Outside listed assets is not bounty eligible.",
+      "policy_status": "verified_current_policy",
+      "source_status": "official_detail_and_updates_verified",
       "program_status": "submissions_resumed_per_official_october_2_update",
-      "eligible_for_shortlist": false,
-      "automation_policy": "unknown",
-      "reward_summary": "unknown",
-      "access_requirements": "2FA required per official update 2024-10-17; account required for participation.",
+      "eligible_for_shortlist": true,
+      "automation_policy": "Maximum 20 requests/second; @intigriti.me alias required; identifying User-Agent and X-Bug-Bounty: Intigriti-<username>.",
+      "reward_summary": "Tier 2 €100–€7,500, impact and organizer decision determine final amount.",
+      "access_requirements": "Intigriti account and 2FA required per official updates. Use owned accounts only.",
       "score_breakdown": {
         "freshness": 3,
-        "scope_clarity": 0,
-        "reward_evidence": 0,
-        "automation_policy": 0,
-        "research_access": 1
+        "scope_clarity": 5,
+        "reward_evidence": 5,
+        "automation_policy": 5,
+        "research_access": 3
       },
-      "score": 18,
-      "changes": [],
+      "score": 84,
+      "changes": [
+        {
+          "candidate": "Visma",
+          "type": "verification_status",
+          "from": "needs_verification",
+          "to": "verified_current_policy",
+          "observed_at": "2026-10-12T11:41:18+07:00",
+          "significant": true
+        }
+      ],
       "evidence_urls": [
+        "https://app.intigriti.com/programs/visma/visma/detail",
         "https://app.intigriti.com/programs/visma/visma/updates"
       ],
       "limits": [
-        "No direct current policy snapshot.",
-        "first_seen is not launch date.",
-        "No testing or submissions performed."
+        "Per-asset expanded descriptions not all read.",
+        "published_at remains unknown; resumption date is not launch date.",
+        "No login, testing, payload or submission."
       ],
-      "next_passive_step": "Read current detail policy and verify rewards, scope, automated tooling limits and status.",
-      "last_check_status": "needs_current_policy_verification"
+      "next_passive_step": "Read individual asset descriptions and public integration documentation; recheck policy before testing.",
+      "last_check_status": "current_policy_verified"
     }
   ],
-  "changes": [],
+  "changes": [
+    {
+      "candidate": "Visma",
+      "type": "verification_status",
+      "from": "needs_verification",
+      "to": "verified_current_policy",
+      "observed_at": "2026-10-12T11:41:18+07:00",
+      "significant": true
+    }
+  ],
   "errors": [
     {
-      "source": "https://hackerone.com/omarchy",
-      "error": "insufficient_policy_content",
+      "source": "https://bugcrowd.com/engagements",
+      "error": "insufficient_content",
       "transient": true
     },
     {
-      "source": "https://bugcrowd.com/engagements",
-      "error": "insufficient_directory_content",
+      "source": "https://hackerone.com/omarchy",
+      "error": "insufficient_content",
       "transient": true
     }
   ],
@@ -940,14 +959,15 @@
   "schedule": "hourly",
   "automation_enabled": true,
   "last_run_summary": {
-    "individual_candidates_evaluated": 6,
-    "unique_pages_opened": 7,
-    "new_policy_snapshots": 0,
+    "individual_candidates_evaluated": 1,
+    "unique_pages_opened": 4,
+    "official_search_source_pages": 1,
+    "new_policy_snapshots": 1,
     "verified_new_opportunities": 0,
     "verified_scope_diffs": 0,
     "verified_new_active_boosts": 0,
-    "candidates_needing_verification": 1,
-    "notification_required": false,
+    "verification_upgrades": 1,
+    "notification_required": true,
     "active_scanning": false,
     "report_path": "bug-bounty-scout/reports/2026-10-12.md"
   },
@@ -1327,6 +1347,43 @@
           "transient": true
         }
       ]
+    },
+    {
+      "run_at": "2026-10-12T11:41:18+07:00",
+      "status": "completed_with_source_gaps",
+      "individual_candidates_evaluated": 1,
+      "unique_pages_opened": 4,
+      "official_search_source_pages": 1,
+      "new_policy_snapshots": 1,
+      "verified_new_opportunities": 0,
+      "verified_scope_diffs": 0,
+      "verified_new_active_boosts": 0,
+      "verification_upgrades": 1,
+      "notification_required": true,
+      "active_scanning": false,
+      "report_path": "bug-bounty-scout/reports/2026-10-12.md",
+      "changes": [
+        {
+          "candidate": "Visma",
+          "type": "verification_status",
+          "from": "needs_verification",
+          "to": "verified_current_policy",
+          "observed_at": "2026-10-12T11:41:18+07:00",
+          "significant": true
+        }
+      ],
+      "errors": [
+        {
+          "source": "https://bugcrowd.com/engagements",
+          "error": "insufficient_content",
+          "transient": true
+        },
+        {
+          "source": "https://hackerone.com/omarchy",
+          "error": "insufficient_content",
+          "transient": true
+        }
+      ]
     }
   ],
   "source_notices": [
@@ -1350,12 +1407,10 @@
     }
   ],
   "last_run_sources": [
+    "https://app.intigriti.com/programs/visma/visma/detail",
     "https://app.intigriti.com/programs/visma/visma/updates",
-    "https://app.intigriti.com/programs/nexo/nexo/updates",
     "https://yeswehack.com/programs",
-    "https://app.intigriti.com/programs/intigriti/intigriti/detail",
-    "https://community.tari.com/t/extra-contest-ootle-security-bug-hunt/397",
-    "https://hackerone.com/omarchy",
-    "https://bugcrowd.com/engagements"
+    "https://bugcrowd.com/engagements",
+    "https://hackerone.com/omarchy"
   ]
 }
